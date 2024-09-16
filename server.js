@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.get('/', function(req, res){
-    res.send('Hi this is NODE JSSSSSSS, RS game tech is here')
+    res.send({Namw: "Hi this is NODE JSSSSSSS, RS game tech is here"})
 }) 
 
 app.get('/ritam', function(req, res){
