@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Monitor</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    .data {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Phone Data Monitor</h1>
+    <div class="data" id="battery">Battery Level: N/A</div>
+    <div class="data" id="temperature">Temperature: N/A</div>
+    <div class="data" id="notification">Notification: No new notifications</div>
+  </div>
+
+  <script>
+    async function fetchData() {
+      const response = await fetch('http://localhost:3000/data');
+      const data = await response.json();
+
+      document.getElementById('battery').innerText = `Battery Level: ${data.batteryLevel}%`;
+      document.getElementById('temperature').innerText = `Temperature: ${data.temperature}`;
+      document.getElementById('notification').innerText = `Notification: ${data.notification}`;
+    }
+
+    // Fetch data every 5 seconds
+    setInterval(fetchData, 5000);
+  </script>
+</body>
+</html>
