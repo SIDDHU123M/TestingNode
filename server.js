@@ -1,4 +1,4 @@
-let diagram = document.getElementById('diagram');
+// let diagram = document.getElementById('diagram');
 
 function generateDiagram(prompt) {
   const url = 'https://oss-ai.excalidraw.com/v1/ai/text-to-diagram/generate';
@@ -37,8 +37,8 @@ function generateDiagram(prompt) {
     })
     .then(data => {
       // Handle the response data
-      // console.log('Response Data:', data);
-      diagram.innerHTML = data
+      console.log('Response Data:', data);
+      // diagram.innerHTML = data
 
     })
     .catch(error => {
@@ -48,4 +48,4 @@ function generateDiagram(prompt) {
 }
 
 // Example usage of the function with a random prompt
-generateDiagram("Generate a UML diagram for an e-commerce system");
+generateDiagram(" Generate a 1. Variables 2. Data Types 3. Interactions and DOM 4. Type Conversions 5. Basic Operators (Math) 6. Operator Precedence 7. Bitwise Operator");

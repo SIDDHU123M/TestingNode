@@ -1,1 +1,1 @@
-# TestingNode
+im getteing cors error after converting givenjs into html js code, "Access to fetch at 'https://oss-ai.excalidraw.com/v1/ai/text-to-diagram/generate' from origin 'https://laughing-space-orbit-qxvj9w4v9pgc9x74-5500.app.github.dev' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled." 
