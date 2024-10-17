@@ -8,6 +8,26 @@ const port = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
+const fetchWithRetry = async (url, options, retries = 3, backoff = 3000) => {
+  try {
+    const fetch = await import('node-fetch');
+    const response = await fetch.default(url, options);
+
+    if (!response.ok) {
+      if (response.status === 429 && retries > 0) {
+        console.log(`Rate limit exceeded. Retrying in ${backoff / 1000} seconds...`);
+        await new Promise(resolve => setTimeout(resolve, backoff));
+        return fetchWithRetry(url, options, retries - 1, backoff * 2);
+      }
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    return response;
+  } catch (error) {
+    throw error;
+  }
+};
+
 app.post('/generate-diagram', async (req, res) => {
   const prompt = req.body.prompt;
   const url = 'https://oss-ai.excalidraw.com/v1/ai/text-to-diagram/generate';
@@ -34,8 +54,7 @@ app.post('/generate-diagram', async (req, res) => {
   };
 
   try {
-    const fetch = await import('node-fetch');
-    const response = await fetch.default(url, {
+    const response = await fetchWithRetry(url, {
       method: 'POST',
       headers: requestHeaders,
       body: JSON.stringify(requestBody),
