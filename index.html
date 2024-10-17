@@ -44,6 +44,7 @@
   <!-- Mermaid.js script to render the diagrams -->
   <script type="module">
     import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+    window.mermaid = mermaid;
     mermaid.initialize({ startOnLoad: true });
   </script>
 </head>
@@ -51,10 +52,15 @@
 
   <h1>Generated Class Diagram</h1>
 
+  <div>
+    <input type="text" id="prompt-input" placeholder="Enter prompt here">
+    <button id="generate-button">Generate Diagram</button>
+  </div>
+
   <div class="diagram-container">
-    <div class="mermaid" id="diagram">
+    <div id="diagram">
     </div>
   </div>
-<script src="server.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

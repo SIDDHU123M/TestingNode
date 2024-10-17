@@ -1,6 +1,15 @@
-// let diagram = document.getElementById('diagram');
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 
-function generateDiagram(prompt) {
+const app = express();
+const port = 3000;
+
+app.use(bodyParser.json());
+app.use(cors());
+
+app.post('/generate-diagram', async (req, res) => {
+  const prompt = req.body.prompt;
   const url = 'https://oss-ai.excalidraw.com/v1/ai/text-to-diagram/generate';
 
   const requestHeaders = {
@@ -21,31 +30,28 @@ function generateDiagram(prompt) {
   };
 
   const requestBody = {
-    prompt: prompt || "Generate a simple flowchart for a login system",  
+    prompt: prompt || "Generate a simple flowchart for a login system",
   };
 
-  fetch(url, {
-    method: 'POST',
-    headers: requestHeaders,
-    body: JSON.stringify(requestBody),
-  })
-    .then(response => {
-      if (response.headers.get('content-type')?.includes('application/json')) {
-        return response.json(); 
-      }
-      return response.text(); 
-    })
-    .then(data => {
-      // Handle the response data
-      console.log('Response Data:', data);
-      // diagram.innerHTML = data
-
-    })
-    .catch(error => {
-      // Handle errors if any
-      console.error('Error:', error);
+  try {
+    const fetch = await import('node-fetch');
+    const response = await fetch.default(url, {
+      method: 'POST',
+      headers: requestHeaders,
+      body: JSON.stringify(requestBody),
     });
-}
 
-// Example usage of the function with a random prompt
-generateDiagram(" Generate a 1. Variables 2. Data Types 3. Interactions and DOM 4. Type Conversions 5. Basic Operators (Math) 6. Operator Precedence 7. Bitwise Operator");
+    const data = response.headers.get('content-type')?.includes('application/json')
+      ? await response.json()
+      : await response.text();
+
+    res.json(data);
+  } catch (error) {
+    console.error('Error:', error);
+    res.status(500).send('Internal Server Error');
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
