@@ -1,6 +1,0 @@
-dependencies:
-  flutter:
-    sdk: flutter
-  http: ^0.13.3
-  battery_plus: ^2.0.4  # For battery info
-  flutter_local_notifications: ^9.2.0  # For notifications
