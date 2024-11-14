@@ -4,53 +4,276 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Tic Tac Toe</title>
+      <title>Enhanced Code Editor with Draggable Output Resizing</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/eclipse.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.css">
       <style>
+            * {
+                  box-sizing: border-box;
+            }
+
             body {
-                  display: flex;
-                  justify-content: center;
-                  align-items: center;
-                  height: 100vh;
                   margin: 0;
-                  background-color: #f0f0f0;
-            }
-
-            .tic-tac-toe {
-                  display: grid;
-                  grid-template-columns: repeat(3, 100px);
-                  grid-template-rows: repeat(3, 100px);
-                  gap: 5px;
-            }
-
-            .cell {
-                  width: 100px;
-                  height: 100px;
-                  background-color: #fff;
-                  border: 2px solid #000;
                   display: flex;
-                  justify-content: center;
+                  flex-direction: column;
+                  height: 100vh;
+                  font-family: Arial, sans-serif;
+                  background-color: #1e1e1e;
+                  color: #d4d4d4;
+            }
+
+            .toolbar {
+                  display: flex;
+                  padding: 10px;
+                  background-color: #333;
                   align-items: center;
-                  font-size: 2em;
+            }
+
+            .toolbar select,
+            .toolbar button {
+                  background-color: #007acc;
+                  color: white;
+                  border: none;
+                  padding: 5px 10px;
+                  margin-right: 10px;
+                  border-radius: 4px;
                   cursor: pointer;
+                  font-size: 14px;
+            }
+
+            #editor-container {
+                  display: flex;
+                  flex-direction: column;
+                  flex: 1;
+                  height: 100%;
+                  overflow: hidden;
+            }
+
+            .CodeMirror {
+                  height: 100%;
+                  font-family: monospace;
+            }
+
+            #resizable-output {
+                  display: flex;
+                  flex-direction: column;
+                  background-color: #1e1e1e;
+                  color: #9cdcfe;
+                  font-family: monospace;
+                  padding: 10px;
+                  overflow-y: auto;
+                  font-size: inherit;
+            }
+
+            .resize-bar {
+                  height: 8px;
+                  background-color: #333;
+                  cursor: row-resize;
+            }
+
+            .expandable {
+                  cursor: pointer;
+                  color: #dcdcaa;
+                  display: flex;
+                  align-items: center;
+                  transition: color 0.2s ease;
+            }
+
+            .expandable:hover {
+                  color: #c586c0;
+            }
+
+            .arrow {
+                  display: inline-block;
+                  width: 0;
+                  height: 0;
+                  margin-right: 5px;
+                  border-left: 6px solid transparent;
+                  border-right: 6px solid transparent;
+                  border-top: 6px solid #dcdcaa;
+                  transition: transform 0.2s ease;
+            }
+
+            .arrow.down {
+                  transform: rotate(90deg);
+            }
+
+            .nested {
+                  padding-left: 20px;
+                  display: none;
+                  transition: max-height 0.3s ease;
+                  max-height: 100px;
+            }
+
+            @media (max-width: 600px) {
+
+                  .toolbar select,
+                  .toolbar button {
+                        padding: 4px 6px;
+                        font-size: 12px;
+                  }
             }
       </style>
 </head>
 
 <body>
-      <div class="tic-tac-toe">
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
-            <div class="cell" data-cell></div>
+      <div class="toolbar">
+            <select id="theme-selector">
+                  <option value="dracula">Dark Theme (Dracula)</option>
+                  <option value="eclipse">Light Theme (Eclipse)</option>
+                  <option value="material">Material Theme</option>
+                  <option value="monokai">Monokai</option>
+            </select>
+            <select id="font-size-selector">
+                  <option value="14px">Font Size: 14px</option>
+                  <option value="16px">Font Size: 16px</option>
+                  <option value="18px">Font Size: 18px</option>
+                  <option value="20px">Font Size: 20px</option>
+            </select>
+            <button id="run-btn">Run</button>
+            <button id="clear-output-btn">Clear Output</button>
       </div>
 
-      <script>
+      <div id="editor-container">
+            <textarea id="js"></textarea>
+            <div class="resize-bar"></div>
+            <div id="resizable-output" style="display: none;"></div>
+      </div>
 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.js"></script>
+
+      <script>
+            const editorContainer = document.getElementById('editor-container');
+            const output = document.getElementById('resizable-output');
+            const resizeBar = document.querySelector('.resize-bar');
+            const runBtn = document.getElementById('run-btn');
+            const clearOutputBtn = document.getElementById('clear-output-btn');
+            const themeSelector = document.getElementById('theme-selector');
+            const fontSizeSelector = document.getElementById('font-size-selector');
+
+            const editor = CodeMirror.fromTextArea(document.getElementById('js'), {
+                  mode: 'javascript',
+                  theme: localStorage.getItem('theme') || 'dracula',
+                  lineNumbers: true,
+                  autoCloseBrackets: true,
+                  extraKeys: {
+                        "Ctrl-Space": "autocomplete",
+                        "'.'": function (cm) {
+                              setTimeout(function () {
+                                    cm.execCommand("autocomplete");
+                              }, 100);
+                              return CodeMirror.Pass;
+                        }
+                  }
+            });
+
+            editor.getWrapperElement().style.fontSize = localStorage.getItem('fontSize') || '16px';
+
+            themeSelector.value = editor.getOption("theme");
+            themeSelector.addEventListener('change', (e) => {
+                  editor.setOption("theme", e.target.value);
+                  localStorage.setItem('theme', e.target.value);
+            });
+
+            fontSizeSelector.value = editor.getWrapperElement().style.fontSize;
+            fontSizeSelector.addEventListener('change', (e) => {
+                  const fontSize = e.target.value;
+                  editor.getWrapperElement().style.fontSize = fontSize;
+                  output.style.fontSize = fontSize;
+                  localStorage.setItem('fontSize', fontSize);
+            });
+
+            runBtn.addEventListener('click', () => {
+                  output.style.display = 'block';
+                  output.innerHTML = '';
+
+                  const originalConsoleLog = console.log;
+                  try {
+                        console.log = function (message) {
+                              output.appendChild(displayMessage(message));
+                        };
+
+                        const func = new Function(editor.getValue());
+                        func();
+
+                  } catch (e) {
+                        output.innerHTML = `<span style="color: red;">${e.message}</span>`;
+                  } finally {
+                        console.log = originalConsoleLog;
+                  }
+            });
+
+            clearOutputBtn.addEventListener('click', () => {
+                  output.innerHTML = '';
+            });
+
+            function displayMessage(message) {
+                  const messageElement = document.createElement('div');
+                  if (typeof message === 'object') {
+                        const isArray = Array.isArray(message);
+                        const container = document.createElement('span');
+                        container.classList.add('expandable');
+                        container.innerHTML = `<span class="arrow"></span>${isArray ? `Array(${message.length})` : 'Object'}`;
+
+                        const arrow = container.querySelector('.arrow');
+                        const nested = document.createElement('div');
+                        nested.classList.add('nested');
+
+                        if (isArray) {
+                              message.forEach((item, index) => {
+                                    const itemElement = document.createElement('div');
+                                    itemElement.innerHTML = `[${index}]: ${typeof item === 'object' ? JSON.stringify(item) : item}`;
+                                    nested.appendChild(itemElement);
+                              });
+                        } else {
+                              Object.keys(message).forEach(key => {
+                                    const itemElement = document.createElement('div');
+                                    itemElement.innerHTML = `${key}: ${typeof message[key] === 'object' ? JSON.stringify(message[key]) : message[key]}`;
+                                    nested.appendChild(itemElement);
+                              });
+                        }
+
+                        container.addEventListener('click', () => {
+                              const isExpanded = nested.style.display === 'block';
+                              nested.style.display = isExpanded ? 'none' : 'block';
+                              arrow.classList.toggle('down', !isExpanded);
+                        });
+                        container.appendChild(nested);
+                        nested.style.display = 'none';
+                        messageElement.appendChild(container);
+                  } else {
+                        messageElement.textContent = message;
+                  }
+                  return messageElement;
+            }
+
+            let startY, startHeight;
+            resizeBar.addEventListener('mousedown', (e) => {
+                  startY = e.clientY;
+                  startHeight = output.offsetHeight;
+                  document.documentElement.style.cursor = 'row-resize';
+                  document.addEventListener('mousemove', resize);
+                  document.addEventListener('mouseup', stopResize);
+            });
+
+            function resize(e) {
+                  const newHeight = startHeight + (e.clientY - startY);
+                  output.style.height = `${newHeight}px`;
+            }
+
+            function stopResize() {
+                  document.documentElement.style.cursor = 'default';
+                  document.removeEventListener('mousemove', resize);
+                  document.removeEventListener('mouseup', stopResize);
+            }
       </script>
 </body>
 
