@@ -9,6 +9,11 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/eclipse.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/solarized.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/ambiance.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/cobalt.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/neo.min.css">
       <style>
             body,
             html {
@@ -42,12 +47,20 @@
                   color: white;
                   border: none;
                   border-radius: 4px;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+            }
+
+            .header button:hover {
+                  background-color: #555;
             }
 
             .file-tabs {
                   display: flex;
                   margin-bottom: 10px;
                   overflow-x: auto;
+                  padding: 5px 0;
+                  background-color: #222;
             }
 
             .file-tab {
@@ -59,10 +72,26 @@
                   cursor: pointer;
                   border-radius: 4px;
                   font-size: 14px;
+                  display: flex;
+                  align-items: center;
             }
 
             .file-tab.active {
                   background-color: #555;
+            }
+
+            .file-tab button {
+                  background-color: transparent;
+                  border: none;
+                  color: white;
+                  cursor: pointer;
+                  font-size: 16px;
+                  margin-left: 8px;
+                  padding: 0;
+            }
+
+            .file-tab button:hover {
+                  color: red;
             }
 
             .editor-container {
@@ -105,10 +134,6 @@
                   resize: none;
             }
 
-            .file-tab-buttons {
-                  margin-left: 10px;
-            }
-
             #runButton {
                   background-color: #28a745;
                   color: white;
@@ -116,6 +141,7 @@
                   border-radius: 4px;
                   padding: 8px 12px;
                   cursor: pointer;
+                  transition: background-color 0.3s ease;
             }
 
             #runButton:hover {
@@ -136,7 +162,6 @@
                   padding-left: 20px;
             }
 
-            /* Custom styles for the suggestion block */
             .CodeMirror-hints {
                   background-color: #444;
                   border: 1px solid #666;
@@ -173,6 +198,11 @@
                               <option value="dracula">Dracula</option>
                               <option value="material">Material</option>
                               <option value="eclipse">Eclipse</option>
+                              <option value="monokai">Monokai</option>
+                              <option value="solarized">Solarized</option>
+                              <option value="ambiance">Ambiance</option>
+                              <option value="cobalt">Cobalt</option>
+                              <option value="neo">Neo</option>
                         </select>
                         <select id="fontSizeSelector">
                               <option value="14px">14px</option>
@@ -204,59 +234,146 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
 
       <script>
-            // Create CodeMirror editor
-            const editor = CodeMirror.fromTextArea(document.getElementById('jsCode'), {
-                  mode: 'javascript',
-                  theme: 'dracula',
-                  lineNumbers: true,
-                  autoCloseBrackets: true,
-                  extraKeys: {
-                        "Ctrl-Space": "autocomplete", // Trigger autocomplete with Ctrl + Space
-                        "'.'": function (cm) {
-                              setTimeout(function () {
-                                    cm.execCommand("autocomplete"); // Trigger autocomplete when dot is pressed
-                              }, 100);
-                              return CodeMirror.Pass;
-                        }
-                  },
-                  hintOptions: {
-                        hint: CodeMirror.hint.javascript
-                  }
-            });
+            let currentFile = '';
+            let files = {};
 
-            document.getElementById('themeSelector').addEventListener('change', (e) => {
-                  editor.setOption('theme', e.target.value);
-                  localStorage.setItem('theme', e.target.value);
-            });
+            const createFileTab = (filename) => {
+                  const tabContainer = document.getElementById('fileTabs');
+                  const tab = document.createElement('button');
+                  tab.classList.add('file-tab');
+                  tab.textContent = filename;
 
-            document.getElementById('fontSizeSelector').addEventListener('change', (e) => {
-                  document.documentElement.style.fontSize = e.target.value;
-                  localStorage.setItem('fontSize', e.target.value);
-            });
-
-            (function () {
-                  const outputContainer = document.getElementById('output');
-                  const originalLog = console.log;
-                  console.log = function (...args) {
-                        outputContainer.textContent += args.join(' ') + '\n';
-                        originalLog.apply(console, args);
+                  const closeButton = document.createElement('button');
+                  closeButton.textContent = '×';
+                  closeButton.onclick = (e) => {
+                        e.stopPropagation();
+                        closeTab(filename);
                   };
-            })();
+
+                  tab.appendChild(closeButton);
+                  tab.onclick = () => switchTab(filename);
+
+                  tabContainer.appendChild(tab);
+
+                  files[filename] = { content: '' };
+                  switchTab(filename);
+            };
+
+            const closeTab = (filename) => {
+                  if (Object.keys(files).length > 1) {
+                        delete files[filename];
+                        const tabContainer = document.getElementById('fileTabs');
+                        const tabToRemove = [...tabContainer.children].find((tab) => tab.textContent.startsWith(filename));
+                        tabContainer.removeChild(tabToRemove);
+
+                        if (currentFile === filename) {
+                              const remainingTabs = Object.keys(files);
+                              switchTab(remainingTabs[remainingTabs.length - 1]);
+                        }
+                  } else {
+                        alert("You cannot close the last open file.");
+                  }
+            };
+
+            const switchTab = (filename) => {
+                  currentFile = filename;
+                  const activeTabs = document.querySelectorAll('.file-tab');
+                  activeTabs.forEach((tab) => tab.classList.remove('active'));
+                  const activeTab = [...activeTabs].find((tab) => tab.textContent.startsWith(filename));
+                  activeTab.classList.add('active');
+                  loadFileContent(filename);
+            };
+
+            const loadFileContent = (filename) => {
+                  const editorContainer = document.querySelector('.editor-container');
+                  editorContainer.innerHTML = '';
+
+                  const editor = document.createElement('textarea');
+                  editor.id = 'jsCode';
+                  editor.placeholder = 'Write your JavaScript code here...';
+                  editorContainer.appendChild(editor);
+
+                  const codemirrorEditor = CodeMirror.fromTextArea(editor, {
+                        lineNumbers: true,
+                        mode: "javascript",
+                        theme: document.getElementById('themeSelector').value,
+                        matchBrackets: true,
+                        autoCloseBrackets: true,
+                        extraKeys: {
+                              "Ctrl-Space": "autocomplete",
+                              "Ctrl-S": function () {
+                                    saveFile();
+                              }
+                        }
+                  });
+
+                  codemirrorEditor.setValue(files[filename].content);
+                  codemirrorEditor.on('change', () => {
+                        files[filename].content = codemirrorEditor.getValue();
+                  });
+
+                  // Enable autocomplete
+                  codemirrorEditor.on("keyup", function (cm, event) {
+                        if (!cm.state.completionActive && (event.keyCode >= 65 && event.keyCode <= 90 || event.keyCode === 32 || event.keyCode === 13)) {
+                              cm.showHint({ completeSingle: false });
+                        }
+                  });
+            };
+
+            const saveFile = () => {
+                  const blob = new Blob([files[currentFile].content], { type: "application/javascript" });
+                  const link = document.createElement('a');
+                  link.href = URL.createObjectURL(blob);
+                  link.download = currentFile;
+                  link.click();
+            };
+
+            document.getElementById('newFileButton').addEventListener('click', () => {
+                  const filename = `newFile_${Object.keys(files).length + 1}.js`;
+                  createFileTab(filename);
+            });
+
+            document.getElementById('saveFileButton').addEventListener('click', saveFile);
+
+            document.getElementById('exportButton').addEventListener('click', () => {
+                  const zip = new JSZip();
+                  Object.keys(files).forEach((filename) => {
+                        zip.file(filename, files[filename].content);
+                  });
+                  zip.generateAsync({ type: "blob" }).then(function (content) {
+                        const link = document.createElement('a');
+                        link.href = URL.createObjectURL(content);
+                        link.download = "code_files.zip";
+                        link.click();
+                  });
+            });
 
             document.getElementById('runButton').addEventListener('click', () => {
-                  const code = editor.getValue();
-                  const outputContainer = document.getElementById('output');
-                  outputContainer.textContent = '';
+                  const output = document.getElementById('output');
+                  output.innerHTML = '';
+
+                  // Redirect console.log to output container
+                  const originalConsoleLog = console.log;
+                  console.log = function (message) {
+                        output.innerHTML += message + '<br>';
+                        originalConsoleLog.apply(console, arguments);
+                  };
 
                   try {
-                        const output = eval(code);
-                        if (output !== undefined) {
-                              console.log(output);
+                        const result = eval(files[currentFile].content);
+                        if (result !== undefined) {
+                              output.textContent += result;
                         }
                   } catch (error) {
-                        console.error(error);
+                        output.textContent += error.message;
                   }
+
+                  // Restore original console.log
+                  console.log = originalConsoleLog;
             });
+
+            // Initialize with a new file
+            createFileTab('newFile_1.js');
       </script>
 </body>
 
