@@ -236,6 +236,7 @@
       <script>
             let currentFile = '';
             let files = {};
+            let codemirrorEditor;
 
             const createFileTab = (filename) => {
                   const tabContainer = document.getElementById('fileTabs');
@@ -293,7 +294,7 @@
                   editor.placeholder = 'Write your JavaScript code here...';
                   editorContainer.appendChild(editor);
 
-                  const codemirrorEditor = CodeMirror.fromTextArea(editor, {
+                  codemirrorEditor = CodeMirror.fromTextArea(editor, {
                         lineNumbers: true,
                         mode: "javascript",
                         theme: document.getElementById('themeSelector').value,
@@ -312,7 +313,6 @@
                         files[filename].content = codemirrorEditor.getValue();
                   });
 
-                  // Enable autocomplete
                   codemirrorEditor.on("keyup", function (cm, event) {
                         if (!cm.state.completionActive && (event.keyCode >= 65 && event.keyCode <= 90 || event.keyCode === 32 || event.keyCode === 13)) {
                               cm.showHint({ completeSingle: false });
@@ -352,7 +352,6 @@
                   const output = document.getElementById('output');
                   output.innerHTML = '';
 
-                  // Redirect console.log to output container
                   const originalConsoleLog = console.log;
                   console.log = function (message) {
                         output.innerHTML += message + '<br>';
@@ -368,11 +367,19 @@
                         output.textContent += error.message;
                   }
 
-                  // Restore original console.log
                   console.log = originalConsoleLog;
             });
 
-            // Initialize with a new file
+            document.getElementById('themeSelector').addEventListener('change', (event) => {
+                  const theme = event.target.value;
+                  codemirrorEditor.setOption('theme', theme);
+            });
+
+            document.getElementById('fontSizeSelector').addEventListener('change', (event) => {
+                  const fontSize = event.target.value;
+                  document.querySelector('.CodeMirror').style.fontSize = fontSize;
+            });
+
             createFileTab('newFile_1.js');
       </script>
 </body>
