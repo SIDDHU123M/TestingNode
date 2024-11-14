@@ -4,276 +4,305 @@
 <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Enhanced Code Editor with Draggable Output Resizing</title>
+      <title>Code Editor</title>
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/eclipse.min.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material.min.css">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
-      <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/eclipse.min.css">
       <style>
-            * {
-                  box-sizing: border-box;
+            body,
+            html {
+                  margin: 0;
+                  padding: 0;
+                  height: 100%;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             }
 
-            body {
-                  margin: 0;
+            .container {
                   display: flex;
                   flex-direction: column;
-                  height: 100vh;
-                  font-family: Arial, sans-serif;
-                  background-color: #1e1e1e;
-                  color: #d4d4d4;
+                  height: 100%;
             }
 
-            .toolbar {
-                  display: flex;
-                  padding: 10px;
+            .header {
                   background-color: #333;
+                  color: white;
+                  padding: 10px;
+                  display: flex;
+                  justify-content: space-between;
                   align-items: center;
+                  flex-wrap: wrap;
             }
 
-            .toolbar select,
-            .toolbar button {
-                  background-color: #007acc;
+            .header select,
+            .header button {
+                  padding: 8px;
+                  margin-right: 10px;
+                  background-color: #444;
                   color: white;
                   border: none;
-                  padding: 5px 10px;
-                  margin-right: 10px;
                   border-radius: 4px;
+            }
+
+            .file-tabs {
+                  display: flex;
+                  margin-bottom: 10px;
+                  overflow-x: auto;
+            }
+
+            .file-tab {
+                  padding: 8px 15px;
+                  margin-right: 5px;
+                  background-color: #444;
+                  color: white;
+                  border: none;
                   cursor: pointer;
+                  border-radius: 4px;
                   font-size: 14px;
             }
 
-            #editor-container {
-                  display: flex;
-                  flex-direction: column;
+            .file-tab.active {
+                  background-color: #555;
+            }
+
+            .editor-container {
                   flex: 1;
-                  height: 100%;
+                  padding: 20px;
                   overflow: hidden;
             }
 
-            .CodeMirror {
-                  height: 100%;
-                  font-family: monospace;
-            }
-
-            #resizable-output {
-                  display: flex;
-                  flex-direction: column;
+            .output-container {
                   background-color: #1e1e1e;
-                  color: #9cdcfe;
-                  font-family: monospace;
+                  color: white;
+                  min-height: 30vh;
                   padding: 10px;
                   overflow-y: auto;
-                  font-size: inherit;
+                  font-size: 14px;
+                  resize: vertical;
+                  border-top: 1px solid #ccc;
+                  transition: height 0.3s ease;
+                  max-height: 60vh;
+                  white-space: pre-wrap;
+                  overflow-x: auto;
             }
 
             .resize-bar {
-                  height: 8px;
-                  background-color: #333;
+                  background-color: #444;
+                  height: 5px;
                   cursor: row-resize;
+                  margin-top: 10px;
+            }
+
+            textarea {
+                  width: 100%;
+                  height: 100%;
+                  background-color: #282a36;
+                  color: #f8f8f2;
+                  border: none;
+                  padding: 10px;
+                  border-radius: 4px;
+                  resize: none;
+            }
+
+            .file-tab-buttons {
+                  margin-left: 10px;
+            }
+
+            #runButton {
+                  background-color: #28a745;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  padding: 8px 12px;
+                  cursor: pointer;
+            }
+
+            #runButton:hover {
+                  background-color: #218838;
             }
 
             .expandable {
                   cursor: pointer;
-                  color: #dcdcaa;
-                  display: flex;
-                  align-items: center;
-                  transition: color 0.2s ease;
+                  color: #ccc;
             }
 
-            .expandable:hover {
-                  color: #c586c0;
-            }
-
-            .arrow {
-                  display: inline-block;
-                  width: 0;
-                  height: 0;
-                  margin-right: 5px;
-                  border-left: 6px solid transparent;
-                  border-right: 6px solid transparent;
-                  border-top: 6px solid #dcdcaa;
-                  transition: transform 0.2s ease;
-            }
-
-            .arrow.down {
-                  transform: rotate(90deg);
-            }
-
-            .nested {
-                  padding-left: 20px;
+            .collapsed {
                   display: none;
-                  transition: max-height 0.3s ease;
-                  max-height: 100px;
             }
 
-            @media (max-width: 600px) {
-
-                  .toolbar select,
-                  .toolbar button {
-                        padding: 4px 6px;
-                        font-size: 12px;
-                  }
+            .collapsed ul {
+                  list-style-type: none;
+                  padding-left: 20px;
             }
       </style>
 </head>
 
 <body>
-      <div class="toolbar">
-            <select id="theme-selector">
-                  <option value="dracula">Dark Theme (Dracula)</option>
-                  <option value="eclipse">Light Theme (Eclipse)</option>
-                  <option value="material">Material Theme</option>
-                  <option value="monokai">Monokai</option>
-            </select>
-            <select id="font-size-selector">
-                  <option value="14px">Font Size: 14px</option>
-                  <option value="16px">Font Size: 16px</option>
-                  <option value="18px">Font Size: 18px</option>
-                  <option value="20px">Font Size: 20px</option>
-            </select>
-            <button id="run-btn">Run</button>
-            <button id="clear-output-btn">Clear Output</button>
-      </div>
+      <div class="container">
+            <div class="header">
+                  <div>
+                        <select id="themeSelector">
+                              <option value="dracula">Dracula</option>
+                              <option value="material">Material</option>
+                              <option value="eclipse">Eclipse</option>
+                        </select>
+                        <select id="fontSizeSelector">
+                              <option value="14px">14px</option>
+                              <option value="16px">16px</option>
+                              <option value="18px">18px</option>
+                              <option value="20px">20px</option>
+                        </select>
+                        <button id="newFileButton">New File</button>
+                        <button id="saveFileButton">Save</button>
+                        <button id="exportButton">Export</button>
+                        <button id="runButton">Run</button>
+                  </div>
+                  <div class="file-tabs" id="fileTabs"></div>
+            </div>
 
-      <div id="editor-container">
-            <textarea id="js"></textarea>
-            <div class="resize-bar"></div>
-            <div id="resizable-output" style="display: none;"></div>
+            <div class="editor-container">
+                  <textarea id="jsCode" placeholder="Write your JavaScript code here..."></textarea>
+            </div>
+
+            <div id="output" class="output-container"></div>
+            <div id="resizeBar" class="resize-bar"></div>
       </div>
 
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
 
       <script>
-            const editorContainer = document.getElementById('editor-container');
-            const output = document.getElementById('resizable-output');
-            const resizeBar = document.querySelector('.resize-bar');
-            const runBtn = document.getElementById('run-btn');
-            const clearOutputBtn = document.getElementById('clear-output-btn');
-            const themeSelector = document.getElementById('theme-selector');
-            const fontSizeSelector = document.getElementById('font-size-selector');
-
-            const editor = CodeMirror.fromTextArea(document.getElementById('js'), {
+            // Create CodeMirror editor
+            const editor = CodeMirror.fromTextArea(document.getElementById('jsCode'), {
                   mode: 'javascript',
-                  theme: localStorage.getItem('theme') || 'dracula',
+                  theme: 'dracula',
                   lineNumbers: true,
                   autoCloseBrackets: true,
                   extraKeys: {
-                        "Ctrl-Space": "autocomplete",
+                        "Ctrl-Space": "autocomplete", // Trigger autocomplete with Ctrl + Space
                         "'.'": function (cm) {
                               setTimeout(function () {
-                                    cm.execCommand("autocomplete");
+                                    cm.execCommand("autocomplete"); // Trigger autocomplete when dot is pressed
                               }, 100);
                               return CodeMirror.Pass;
                         }
+                  },
+                  hintOptions: {
+                        hint: CodeMirror.hint.javascript
                   }
             });
 
-            editor.getWrapperElement().style.fontSize = localStorage.getItem('fontSize') || '16px';
-
-            themeSelector.value = editor.getOption("theme");
-            themeSelector.addEventListener('change', (e) => {
-                  editor.setOption("theme", e.target.value);
+            document.getElementById('themeSelector').addEventListener('change', (e) => {
+                  editor.setOption('theme', e.target.value);
                   localStorage.setItem('theme', e.target.value);
             });
 
-            fontSizeSelector.value = editor.getWrapperElement().style.fontSize;
-            fontSizeSelector.addEventListener('change', (e) => {
-                  const fontSize = e.target.value;
-                  editor.getWrapperElement().style.fontSize = fontSize;
-                  output.style.fontSize = fontSize;
-                  localStorage.setItem('fontSize', fontSize);
+            document.getElementById('fontSizeSelector').addEventListener('change', (e) => {
+                  document.documentElement.style.fontSize = e.target.value;
+                  localStorage.setItem('fontSize', e.target.value);
             });
 
-            runBtn.addEventListener('click', () => {
-                  output.style.display = 'block';
-                  output.innerHTML = '';
+            (function () {
+                  const outputContainer = document.getElementById('output');
+                  const originalLog = console.log;
+                  console.log = function (...args) {
+                        outputContainer.textContent += args.join(' ') + '\n';
+                        originalLog.apply(console, args);
+                  };
+            })();
 
-                  const originalConsoleLog = console.log;
+            document.getElementById('runButton').addEventListener('click', () => {
+                  const code = editor.getValue();
+                  const outputContainer = document.getElementById('output');
+                  outputContainer.textContent = '';
+
                   try {
-                        console.log = function (message) {
-                              output.appendChild(displayMessage(message));
-                        };
-
-                        const func = new Function(editor.getValue());
-                        func();
-
-                  } catch (e) {
-                        output.innerHTML = `<span style="color: red;">${e.message}</span>`;
-                  } finally {
-                        console.log = originalConsoleLog;
-                  }
-            });
-
-            clearOutputBtn.addEventListener('click', () => {
-                  output.innerHTML = '';
-            });
-
-            function displayMessage(message) {
-                  const messageElement = document.createElement('div');
-                  if (typeof message === 'object') {
-                        const isArray = Array.isArray(message);
-                        const container = document.createElement('span');
-                        container.classList.add('expandable');
-                        container.innerHTML = `<span class="arrow"></span>${isArray ? `Array(${message.length})` : 'Object'}`;
-
-                        const arrow = container.querySelector('.arrow');
-                        const nested = document.createElement('div');
-                        nested.classList.add('nested');
-
-                        if (isArray) {
-                              message.forEach((item, index) => {
-                                    const itemElement = document.createElement('div');
-                                    itemElement.innerHTML = `[${index}]: ${typeof item === 'object' ? JSON.stringify(item) : item}`;
-                                    nested.appendChild(itemElement);
-                              });
-                        } else {
-                              Object.keys(message).forEach(key => {
-                                    const itemElement = document.createElement('div');
-                                    itemElement.innerHTML = `${key}: ${typeof message[key] === 'object' ? JSON.stringify(message[key]) : message[key]}`;
-                                    nested.appendChild(itemElement);
-                              });
+                        const output = eval(code);
+                        if (output !== undefined) {
+                              console.log(output);
                         }
-
-                        container.addEventListener('click', () => {
-                              const isExpanded = nested.style.display === 'block';
-                              nested.style.display = isExpanded ? 'none' : 'block';
-                              arrow.classList.toggle('down', !isExpanded);
-                        });
-                        container.appendChild(nested);
-                        nested.style.display = 'none';
-                        messageElement.appendChild(container);
-                  } else {
-                        messageElement.textContent = message;
+                  } catch (error) {
+                        console.log(`Error: ${error}`);
                   }
-                  return messageElement;
-            }
-
-            let startY, startHeight;
-            resizeBar.addEventListener('mousedown', (e) => {
-                  startY = e.clientY;
-                  startHeight = output.offsetHeight;
-                  document.documentElement.style.cursor = 'row-resize';
-                  document.addEventListener('mousemove', resize);
-                  document.addEventListener('mouseup', stopResize);
             });
 
-            function resize(e) {
-                  const newHeight = startHeight + (e.clientY - startY);
-                  output.style.height = `${newHeight}px`;
+            const fileTabsContainer = document.getElementById('fileTabs');
+            let activeFileTab = null;
+
+            function openFileTab(filename, content = '') {
+                  const tab = document.createElement('button');
+                  tab.classList.add('file-tab');
+                  tab.textContent = filename;
+                  tab.addEventListener('click', () => {
+                        switchFileTab(tab);
+                  });
+
+                  const closeBtn = document.createElement('span');
+                  closeBtn.textContent = 'X';
+                  closeBtn.style.marginLeft = '10px';
+                  closeBtn.addEventListener('click', (e) => {
+                        e.stopPropagation();
+                        closeFileTab(tab);
+                  });
+
+                  tab.appendChild(closeBtn);
+                  fileTabsContainer.appendChild(tab);
+
+                  if (!activeFileTab) {
+                        activeFileTab = tab;
+                        tab.classList.add('active');
+                  }
+
+                  editor.setValue(content);
             }
 
-            function stopResize() {
-                  document.documentElement.style.cursor = 'default';
-                  document.removeEventListener('mousemove', resize);
-                  document.removeEventListener('mouseup', stopResize);
+            function switchFileTab(tab) {
+                  if (activeFileTab) {
+                        activeFileTab.classList.remove('active');
+                  }
+                  tab.classList.add('active');
+                  activeFileTab = tab;
             }
+
+            function closeFileTab(tab) {
+                  if (tab === activeFileTab) {
+                        activeFileTab = null;
+                  }
+                  fileTabsContainer.removeChild(tab);
+            }
+
+            document.getElementById('newFileButton').addEventListener('click', () => {
+                  const filename = prompt('Enter new file name');
+                  if (filename) {
+                        openFileTab(filename);
+                  }
+            });
+
+            document.getElementById('saveFileButton').addEventListener('click', () => {
+                  const content = editor.getValue();
+                  const filename = activeFileTab ? activeFileTab.textContent : 'untitled.js';
+                  const blob = new Blob([content], { type: 'application/javascript' });
+                  const link = document.createElement('a');
+                  link.href = URL.createObjectURL(blob);
+                  link.download = filename;
+                  link.click();
+            });
+
+            document.getElementById('exportButton').addEventListener('click', () => {
+                  const content = editor.getValue();
+                  const filename = activeFileTab ? activeFileTab.textContent : 'untitled.js';
+                  const zip = new JSZip();
+                  zip.file(filename, content);
+                  zip.generateAsync({ type: 'blob' }).then((blob) => {
+                        const link = document.createElement('a');
+                        link.href = URL.createObjectURL(blob);
+                        link.download = 'project.zip';
+                        link.click();
+                  });
+            });
       </script>
 </body>
 
