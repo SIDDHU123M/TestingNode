@@ -69,6 +69,7 @@
                   flex: 1;
                   padding: 20px;
                   overflow: hidden;
+                  position: relative;
             }
 
             .output-container {
@@ -134,6 +135,33 @@
                   list-style-type: none;
                   padding-left: 20px;
             }
+
+            /* Custom styles for the suggestion block */
+            .CodeMirror-hints {
+                  background-color: #444;
+                  border: 1px solid #666;
+                  color: white;
+                  font-size: 14px;
+                  max-height: 200px;
+                  overflow-y: auto;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                  z-index: 9999;
+                  position: absolute !important;
+            }
+
+            .CodeMirror-hints ul {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            .CodeMirror-hints li {
+                  padding: 5px 10px;
+                  cursor: pointer;
+            }
+
+            .CodeMirror-hints li:hover {
+                  background-color: #555;
+            }
       </style>
 </head>
 
@@ -171,6 +199,7 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/javascript-hint.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
 
@@ -225,83 +254,8 @@
                               console.log(output);
                         }
                   } catch (error) {
-                        console.log(`Error: ${error}`);
+                        console.error(error);
                   }
-            });
-
-            const fileTabsContainer = document.getElementById('fileTabs');
-            let activeFileTab = null;
-
-            function openFileTab(filename, content = '') {
-                  const tab = document.createElement('button');
-                  tab.classList.add('file-tab');
-                  tab.textContent = filename;
-                  tab.addEventListener('click', () => {
-                        switchFileTab(tab);
-                  });
-
-                  const closeBtn = document.createElement('span');
-                  closeBtn.textContent = 'X';
-                  closeBtn.style.marginLeft = '10px';
-                  closeBtn.addEventListener('click', (e) => {
-                        e.stopPropagation();
-                        closeFileTab(tab);
-                  });
-
-                  tab.appendChild(closeBtn);
-                  fileTabsContainer.appendChild(tab);
-
-                  if (!activeFileTab) {
-                        activeFileTab = tab;
-                        tab.classList.add('active');
-                  }
-
-                  editor.setValue(content);
-            }
-
-            function switchFileTab(tab) {
-                  if (activeFileTab) {
-                        activeFileTab.classList.remove('active');
-                  }
-                  tab.classList.add('active');
-                  activeFileTab = tab;
-            }
-
-            function closeFileTab(tab) {
-                  if (tab === activeFileTab) {
-                        activeFileTab = null;
-                  }
-                  fileTabsContainer.removeChild(tab);
-            }
-
-            document.getElementById('newFileButton').addEventListener('click', () => {
-                  const filename = prompt('Enter new file name');
-                  if (filename) {
-                        openFileTab(filename);
-                  }
-            });
-
-            document.getElementById('saveFileButton').addEventListener('click', () => {
-                  const content = editor.getValue();
-                  const filename = activeFileTab ? activeFileTab.textContent : 'untitled.js';
-                  const blob = new Blob([content], { type: 'application/javascript' });
-                  const link = document.createElement('a');
-                  link.href = URL.createObjectURL(blob);
-                  link.download = filename;
-                  link.click();
-            });
-
-            document.getElementById('exportButton').addEventListener('click', () => {
-                  const content = editor.getValue();
-                  const filename = activeFileTab ? activeFileTab.textContent : 'untitled.js';
-                  const zip = new JSZip();
-                  zip.file(filename, content);
-                  zip.generateAsync({ type: 'blob' }).then((blob) => {
-                        const link = document.createElement('a');
-                        link.href = URL.createObjectURL(blob);
-                        link.download = 'project.zip';
-                        link.click();
-                  });
             });
       </script>
 </body>
