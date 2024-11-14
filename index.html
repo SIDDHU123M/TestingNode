@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Code Editor</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/material.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/eclipse.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/monokai.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/solarized.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/ambiance.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/cobalt.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/neo.min.css">
+      <style>
+            body,
+            html {
+                  margin: 0;
+                  padding: 0;
+                  height: 100%;
+                  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+
+            .container {
+                  display: flex;
+                  flex-direction: column;
+                  height: 100%;
+            }
+
+            .header {
+                  background-color: #333;
+                  color: white;
+                  padding: 10px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  flex-wrap: wrap;
+            }
+
+            .header select,
+            .header button {
+                  padding: 8px;
+                  margin-right: 10px;
+                  background-color: #444;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+            }
+
+            .header button:hover {
+                  background-color: #555;
+            }
+
+            .file-tabs {
+                  display: flex;
+                  margin-bottom: 10px;
+                  overflow-x: auto;
+                  padding: 5px 0;
+                  background-color: #222;
+            }
+
+            .file-tab {
+                  padding: 8px 15px;
+                  margin-right: 5px;
+                  background-color: #444;
+                  color: white;
+                  border: none;
+                  cursor: pointer;
+                  border-radius: 4px;
+                  font-size: 14px;
+                  display: flex;
+                  align-items: center;
+            }
+
+            .file-tab.active {
+                  background-color: #555;
+            }
+
+            .file-tab button {
+                  background-color: transparent;
+                  border: none;
+                  color: white;
+                  cursor: pointer;
+                  font-size: 16px;
+                  margin-left: 8px;
+                  padding: 0;
+            }
+
+            .file-tab button:hover {
+                  color: red;
+            }
+
+            .editor-container {
+                  flex: 1;
+                  padding: 20px;
+                  overflow: hidden;
+                  position: relative;
+            }
+
+            .output-container {
+                  background-color: #1e1e1e;
+                  color: white;
+                  min-height: 30vh;
+                  padding: 10px;
+                  overflow-y: auto;
+                  font-size: 14px;
+                  resize: vertical;
+                  border-top: 1px solid #ccc;
+                  transition: height 0.3s ease;
+                  max-height: 60vh;
+                  white-space: pre-wrap;
+                  overflow-x: auto;
+            }
+
+            .resize-bar {
+                  background-color: #444;
+                  height: 5px;
+                  cursor: row-resize;
+                  margin-top: 10px;
+            }
+
+            textarea {
+                  width: 100%;
+                  height: 100%;
+                  background-color: #282a36;
+                  color: #f8f8f2;
+                  border: none;
+                  padding: 10px;
+                  border-radius: 4px;
+                  resize: none;
+            }
+
+            #runButton {
+                  background-color: #28a745;
+                  color: white;
+                  border: none;
+                  border-radius: 4px;
+                  padding: 8px 12px;
+                  cursor: pointer;
+                  transition: background-color 0.3s ease;
+            }
+
+            #runButton:hover {
+                  background-color: #218838;
+            }
+
+            .expandable {
+                  cursor: pointer;
+                  color: #ccc;
+            }
+
+            .collapsed {
+                  display: none;
+            }
+
+            .collapsed ul {
+                  list-style-type: none;
+                  padding-left: 20px;
+            }
+
+            .CodeMirror-hints {
+                  background-color: #444;
+                  border: 1px solid #666;
+                  color: white;
+                  font-size: 14px;
+                  max-height: 200px;
+                  overflow-y: auto;
+                  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+                  z-index: 9999;
+                  position: absolute !important;
+            }
+
+            .CodeMirror-hints ul {
+                  padding: 0;
+                  margin: 0;
+            }
+
+            .CodeMirror-hints li {
+                  padding: 5px 10px;
+                  cursor: pointer;
+            }
+
+            .CodeMirror-hints li:hover {
+                  background-color: #555;
+            }
+      </style>
+</head>
+
+<body>
+      <div class="container">
+            <div class="header">
+                  <div>
+                        <select id="themeSelector">
+                              <option value="dracula">Dracula</option>
+                              <option value="material">Material</option>
+                              <option value="eclipse">Eclipse</option>
+                              <option value="monokai">Monokai</option>
+                              <option value="solarized">Solarized</option>
+                              <option value="ambiance">Ambiance</option>
+                              <option value="cobalt">Cobalt</option>
+                              <option value="neo">Neo</option>
+                        </select>
+                        <select id="fontSizeSelector">
+                              <option value="14px">14px</option>
+                              <option value="16px">16px</option>
+                              <option value="18px">18px</option>
+                              <option value="20px">20px</option>
+                        </select>
+                        <button id="newFileButton">New File</button>
+                        <button id="saveFileButton">Save</button>
+                        <button id="exportButton">Export</button>
+                        <button id="runButton">Run</button>
+                  </div>
+                  <div class="file-tabs" id="fileTabs"></div>
+            </div>
+
+            <div class="editor-container">
+                  <textarea id="jsCode" placeholder="Write your JavaScript code here..."></textarea>
+            </div>
+
+            <div id="output" class="output-container"></div>
+            <div id="resizeBar" class="resize-bar"></div>
+      </div>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/edit/closebrackets.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/show-hint.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/addon/hint/javascript-hint.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/javascript/javascript.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.7.1/jszip.min.js"></script>
+
+      <script>
+            let currentFile = '';
+            let files = {};
+            let codemirrorEditor;
+
+            const createFileTab = (filename) => {
+                  const tabContainer = document.getElementById('fileTabs');
+                  const tab = document.createElement('button');
+                  tab.classList.add('file-tab');
+                  tab.textContent = filename;
+
+                  const closeButton = document.createElement('button');
+                  closeButton.textContent = '×';
+                  closeButton.onclick = (e) => {
+                        e.stopPropagation();
+                        closeTab(filename);
+                  };
+
+                  tab.appendChild(closeButton);
+                  tab.onclick = () => switchTab(filename);
+
+                  tabContainer.appendChild(tab);
+
+                  files[filename] = { content: '' };
+                  switchTab(filename);
+            };
+
+            const closeTab = (filename) => {
+                  if (Object.keys(files).length > 1) {
+                        delete files[filename];
+                        const tabContainer = document.getElementById('fileTabs');
+                        const tabToRemove = [...tabContainer.children].find((tab) => tab.textContent.startsWith(filename));
+                        tabContainer.removeChild(tabToRemove);
+
+                        if (currentFile === filename) {
+                              const remainingTabs = Object.keys(files);
+                              switchTab(remainingTabs[remainingTabs.length - 1]);
+                        }
+                  } else {
+                        alert("You cannot close the last open file.");
+                  }
+            };
+
+            const switchTab = (filename) => {
+                  currentFile = filename;
+                  const activeTabs = document.querySelectorAll('.file-tab');
+                  activeTabs.forEach((tab) => tab.classList.remove('active'));
+                  const activeTab = [...activeTabs].find((tab) => tab.textContent.startsWith(filename));
+                  activeTab.classList.add('active');
+                  loadFileContent(filename);
+            };
+
+            const loadFileContent = (filename) => {
+                  const editorContainer = document.querySelector('.editor-container');
+                  editorContainer.innerHTML = '';
+
+                  const editor = document.createElement('textarea');
+                  editor.id = 'jsCode';
+                  editor.placeholder = 'Write your JavaScript code here...';
+                  editorContainer.appendChild(editor);
+
+                  codemirrorEditor = CodeMirror.fromTextArea(editor, {
+                        lineNumbers: true,
+                        mode: "javascript",
+                        theme: document.getElementById('themeSelector').value,
+                        matchBrackets: true,
+                        autoCloseBrackets: true,
+                        extraKeys: {
+                              "Ctrl-Space": "autocomplete",
+                              "Ctrl-S": function () {
+                                    saveFile();
+                              }
+                        }
+                  });
+
+                  codemirrorEditor.setValue(files[filename].content);
+                  codemirrorEditor.on('change', () => {
+                        files[filename].content = codemirrorEditor.getValue();
+                  });
+
+                  codemirrorEditor.on("keyup", function (cm, event) {
+                        if (!cm.state.completionActive && (event.keyCode >= 65 && event.keyCode <= 90 || event.keyCode === 32 || event.keyCode === 13)) {
+                              cm.showHint({ completeSingle: false });
+                        }
+                  });
+            };
+
+            const saveFile = () => {
+                  const blob = new Blob([files[currentFile].content], { type: "application/javascript" });
+                  const link = document.createElement('a');
+                  link.href = URL.createObjectURL(blob);
+                  link.download = currentFile;
+                  link.click();
+            };
+
+            document.getElementById('newFileButton').addEventListener('click', () => {
+                  const filename = `newFile_${Object.keys(files).length + 1}.js`;
+                  createFileTab(filename);
+            });
+
+            document.getElementById('saveFileButton').addEventListener('click', saveFile);
+
+            document.getElementById('exportButton').addEventListener('click', () => {
+                  const zip = new JSZip();
+                  Object.keys(files).forEach((filename) => {
+                        zip.file(filename, files[filename].content);
+                  });
+                  zip.generateAsync({ type: "blob" }).then(function (content) {
+                        const link = document.createElement('a');
+                        link.href = URL.createObjectURL(content);
+                        link.download = "code_files.zip";
+                        link.click();
+                  });
+            });
+
+            document.getElementById('runButton').addEventListener('click', () => {
+                  const output = document.getElementById('output');
+                  output.innerHTML = '';
+
+                  const originalConsoleLog = console.log;
+                  console.log = function (message) {
+                        output.innerHTML += message + '<br>';
+                        originalConsoleLog.apply(console, arguments);
+                  };
+
+                  try {
+                        const result = eval(files[currentFile].content);
+                        if (result !== undefined) {
+                              output.textContent += result;
+                        }
+                  } catch (error) {
+                        output.textContent += error.message;
+                  }
+
+                  console.log = originalConsoleLog;
+            });
+
+            document.getElementById('themeSelector').addEventListener('change', (event) => {
+                  const theme = event.target.value;
+                  codemirrorEditor.setOption('theme', theme);
+            });
+
+            document.getElementById('fontSizeSelector').addEventListener('change', (event) => {
+                  const fontSize = event.target.value;
+                  document.querySelector('.CodeMirror').style.fontSize = fontSize;
+            });
+
+            createFileTab('newFile_1.js');
+      </script>
+</body>
+
+</html>
