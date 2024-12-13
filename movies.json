@@ -1,0 +1,42 @@
+[
+  {
+    "name": "The Shawshank Redemption",
+    "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+    "rating": 9.3,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNDY0Y2E2MjItOTRiYi00ZDQ2LWJiNDItNDQ2ZjAzYjU2YjI5XkEyXkFqcGc@._V1_.jpg",
+    "director": "Frank Darabont",
+    "year_released": 1994
+  },
+  {
+    "name": "The Godfather",
+    "description": "The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.",
+    "rating": 9.2,
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmU1YzU0NzEtMWE3OC00N2M3LTliOWMtZDRhNjU2YjlkMTZhXkEyXkFqcGc@._V1_.jpg",
+    "director": "Francis Ford Coppola",
+    "year_released": 1972
+  },
+  {
+    "name": "The Dark Knight",
+    "description": "When the menace known as the Joker emerges from his mysterious past, he wreaks havoc and chaos on the people of Gotham.",
+    "rating": 9.0,
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTAxNzI0NDE1NF5BMl5BanBnXkFtZTcwNjczMTk2Mw@@._V1_.jpg",
+    "director": "Christopher Nolan",
+    "year_released": 2008
+  },
+  {
+    "name": "Pulp Fiction",
+    "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+    "rating": 8.9,
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTY1MzgzOTYxNV5BMl5BanBnXkFtZTgwMDI4OTEwMjE@._V1_.jpg",
+    "director": "Quentin Tarantino",
+    "year_released": 1994
+  },
+  {
+    "name": "Forrest Gump",
+    "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate, and other historical events unfold from the perspective of an Alabama man with an IQ of 75.",
+    "rating": 8.8,
+    "poster": "https://m.media-amazon.com/images/M/MV5BMGVmNzdlZmQtNzRkYS00ODU5LWJjODctYmZkYmJkN2U3MmYzXkEyXkFqcGc@._V1_.jpg",
+    "director": "Robert Zemeckis",
+    "year_released": 1994
+  }
+]

@@ -1,0 +1,48 @@
+img {
+  display: block;
+  margin: auto;
+  max-width: 100px;
+  max-height: 100px;
+}
+
+.UpandDown {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 15px;
+}
+
+.UpandDown h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.UpandDown p {
+  margin: 5px 0;
+}
+
+.flexBox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.SidebySide {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #f9f9f9;
+  transition: transform 0.5s ease; /* Add this line */
+}
+
+.flexBox .SidebySide:hover {
+  transform: scale(1.01) translateY(-5px);
+  cursor: pointer;
+  border: 2px solid #616161;
+}
