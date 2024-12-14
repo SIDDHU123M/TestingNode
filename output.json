@@ -1,0 +1,3548 @@
+{
+  "AI": {
+    "subcategories": {
+      "Content Creation": [
+        {
+          "name": "Rytr.me",
+          "url": "https://rytr.me/",
+          "description": "A free AI-powered content-writing tool for generating text."
+        },
+        {
+          "name": "Simplified",
+          "url": "https://simplified.com/ai-content-generator",
+          "description": "Free tools for content creation, from copywriting to graphic design."
+        },
+        {
+          "name": "Quillbot",
+          "url": "https://quillbot.com/",
+          "description": "A free AI paraphrasing and grammar checker tool."
+        },
+        {
+          "name": "Copy.ai",
+          "url": "https://www.copy.ai/",
+          "description": "AI-powered content generation tool for creating marketing copy."
+        },
+        {
+          "name": "Writesonic",
+          "url": "https://writesonic.com/",
+          "description": "AI writing assistant for generating high-quality content."
+        }
+      ],
+      "Image Generation": [
+        {
+          "name": "Craiyon",
+          "url": "https://www.craiyon.com/",
+          "description": "Free AI image generator for creating artwork or visuals."
+        },
+        {
+          "name": "DeepAI",
+          "url": "https://deepai.org/machine-learning-model/text-to-image",
+          "description": "Free AI tools for generating images from text prompts."
+        },
+        {
+          "name": "Artbreeder",
+          "url": "https://www.artbreeder.com/",
+          "description": "A collaborative AI tool for creating and exploring images."
+        },
+        {
+          "name": "Runway ML",
+          "url": "https://runwayml.com/",
+          "description": "A platform for creating and experimenting with AI-generated images and videos."
+        }
+      ],
+      "Code Assistance": [
+        {
+          "name": "TabNine",
+          "url": "https://www.tabnine.com/",
+          "description": "AI-powered code completion tool available for free."
+        },
+        {
+          "name": "Kite",
+          "url": "https://www.kite.com/",
+          "description": "Free AI assistant for programmers (supports multiple languages)."
+        },
+        {
+          "name": "Blackbox AI",
+          "url": "https://www.blackbox.ai/",
+          "description": "Blackbox Code Chat to answer coding questions and assist them while writing code"
+        },
+        {
+          "name": "Copiolot",
+          "url": "https://copilot.microsoft.com/",
+          "description": "Microsoft Copilot is your companion to inform, entertain, and inspire."
+        },
+        {
+          "name": "DeepCode",
+          "url": "https://www.deepcode.ai/",
+          "description": "DeepCode finds bugs, security vulnerabilities, performance issues, and code smells in your code."
+        },
+        {
+          "name": "CodeT5",
+          "url": "https://github.com/salesforce/CodeT5",
+          "description": "A pre-trained model for code understanding and generation."
+        }
+      ],
+      "Chatbots": [
+        {
+          "name": "ChatGPT Free",
+          "url": "https://chat.openai.com/",
+          "description": "Free conversational AI model (with restrictions on usage volume)."
+        },
+        {
+          "name": "Gemini",
+          "url": "https://gemini.google.com/app",
+          "description": "Developed by google, A free AI Assistant"
+        },
+        {
+          "name": "Copiolot",
+          "url": "https://copilot.microsoft.com/",
+          "description": "Microsoft Copilot is your companion"
+        },
+        {
+          "name": "PiChat",
+          "url": "https://pi.ai/",
+          "description": "Pi is your personal AI, designed to be supportive, smart, and there for you anytime."
+        },
+        {
+          "name": "Replika",
+          "url": "https://replika.ai/",
+          "description": "Replika is a chatbot that learns from you, and is designed to be your friend."
+        },
+        {
+          "name": "Dialogflow",
+          "url": "https://dialogflow.cloud.google.com/",
+          "description": "A natural language understanding platform for building conversational interfaces."
+        },
+        {
+          "name": "Botpress",
+          "url": "https://botpress.com/",
+          "description": "An open-source platform for building and managing chatbots."
+        }
+      ],
+      "Research and Analysis": [
+        {
+          "name": "Semantic Scholar",
+          "url": "https://www.semanticscholar.org/",
+          "description": "Free AI tool for academic paper discovery and summarization."
+        },
+        {
+          "name": "ExplainPaper",
+          "url": "https://www.explainpaper.com/",
+          "description": "Simplifies and explains academic papers for researchers."
+        },
+        {
+          "name": "Paper Digest",
+          "url": "https://paperdigest.org/",
+          "description": "Free AI tool for summarizing academic papers."
+        },
+        {
+          "name": "Scite",
+          "url": "https://scite.ai/",
+          "description": "An AI tool for discovering and evaluating scientific articles."
+        },
+        {
+          "name": "Iris.ai",
+          "url": "https://iris.ai/",
+          "description": "An AI assistant for literature reviews and research discovery."
+        },
+        {
+          "name": "Runway ML",
+          "url": "https://runwayml.com/",
+          "description": "Creative tools for media and content creation."
+        },
+        {
+          "name": "Copy.ai",
+          "url": "https://copy.ai/",
+          "description": "AI-powered marketing and writing assistant."
+        },
+        {
+          "name": "Jasper AI",
+          "url": "https://www.jasper.ai/",
+          "description": "Advanced content generation tool for businesses."
+        },
+        {
+          "name": "Frase",
+          "url": "https://www.frase.io/",
+          "description": "An AI-powered content optimization tool for SEO and content marketing."
+        },
+        {
+          "name": "MarketMuse",
+          "url": "https://www.marketmuse.com/",
+          "description": "An AI-driven content research and optimization platform."
+        },
+        {
+          "name": "Hugging Face Transformers",
+          "url": "https://github.com/huggingface/transformers",
+          "description": "Open-source AI models for NLP and beyond."
+        },
+        {
+          "name": "TensorFlow Hub",
+          "url": "https://tfhub.dev/",
+          "description": "Library of pre-trained AI models for various applications."
+        },
+        {
+          "name": "PyTorch Hub",
+          "url": "https://pytorch.org/hub/",
+          "description": "A repository of pre-trained PyTorch models."
+        },
+        {
+          "name": "Fastai",
+          "url": "https://github.com/fastai/fastai",
+          "description": "A deep learning library that simplifies training fast and accurate neural nets."
+        },
+        {
+          "name": "AllenNLP",
+          "url": "https://github.com/allenai/allennlp",
+          "description": "An open-source library for building state-of-the-art NLP models."
+        }
+      ]
+    }
+  },
+
+  "Entertainment": {
+    "subcategories": {
+      "Movie & Series": [
+        {
+          "name": "IOSMirror",
+          "description": "Watch Movies and Tv Series from Netflix, Amazon Prime Video, Disney+, Hotstar and 50+ More OTT Platform",
+          "url": "https://iosmirror.cc/"
+        },
+        {
+          "name": "Donkey.to",
+          "description": "the ultimate destination for global entertainment!",
+          "url": "https://donkey.to/"
+        },
+        {
+          "name": "Onion Play",
+          "description": "OnionPlay is a free online movie-watching website",
+          "url": "https://onionplay.city/"
+        },
+        {
+          "name": "Prmovies",
+          "description": "Offers a variety of movies for streaming.",
+          "url": "https://prmovies.my/"
+        },
+        {
+          "name": "Movies2Watch",
+          "description": "A site providing a selection of films to watch.",
+          "url": "https://movies2watch.is/"
+        },
+        {
+          "name": "Allmoviesforyou",
+          "description": "Features a wide range of movies across genres.",
+          "url": "https://anymovie.cc/"
+        },
+        {
+          "name": "M4UHD",
+          "description": "Specializes in high-definition movie streaming.",
+          "url": "https://ww1.m4uhd.tv/"
+        },
+        {
+          "name": "ProtonMovies",
+          "description": "Offers a variety of movies and shows for Downloading.",
+          "url": "https://protonmovies.online/"
+        },
+        {
+          "name": "watchasian",
+          "description": "Focused on Asian movies and TV series.",
+          "url": "https://watchasian.art/"
+        },
+        {
+          "name": "fmovies",
+          "description": "A popular destination for streaming films online.",
+          "url": "https://fmovies.llc/"
+        },
+        {
+          "name": "Sflix",
+          "description": "Offers a wide selection of movies and shows for streaming.",
+          "url": "https://sflix.to/"
+        },
+        {
+          "name": "Bflix",
+          "description": "Features various movies and series in one place.",
+          "url": "https://bflix.ru/"
+        },
+        {
+          "name": "Privatehd",
+          "description": "Focuses on high-quality movie streaming.",
+          "url": "https://privatehd.to/"
+        },
+        {
+          "name": "Primewire",
+          "description": "A site for accessing a vast array of films.",
+          "url": "https://ww2.primewire.quest/"
+        },
+        {
+          "name": "Lookmovie2",
+          "description": "Provides an extensive collection of films to view.",
+          "url": "https://lookmovie2.to/"
+        },
+        {
+          "name": "Downloadhub",
+          "description": "A platform for downloading movies and series.",
+          "url": "https://www.downloadhub.sx/"
+        },
+        {
+          "name": "Dvdplay",
+          "description": "Offers various films available for streaming.",
+          "url": "https://dvdplay.link/"
+        },
+        {
+          "name": "Foumovies",
+          "description": "Features a selection of movies for online viewing.",
+          "url": "https://foumovies.pro/"
+        },
+        {
+          "name": "1tamilmv",
+          "description": "A resource for Tamil movies and content.",
+          "url": "https://www.1tamilmv.tf/"
+        },
+        {
+          "name": "UwatchFree",
+          "description": "Provides free access to numerous films and shows.",
+          "url": "https://uwatchfree.be/"
+        },
+        {
+          "name": "WatchToday",
+          "description": "A site offering current movies and series for streaming.",
+          "url": "https://watchtoday.stream/"
+        },
+        {
+          "name": "8xmovies",
+          "description": "Features a collection of movies available for online access.",
+          "url": "https://8xmovies.college/"
+        },
+        {
+          "name": "Gimy",
+          "description": "A streaming site for various films and shows.",
+          "url": "https://gimy.news/"
+        },
+        {
+          "name": "Dramanice",
+          "description": "Focused on Asian dramas and related content.",
+          "url": "https://ww3.dramanice.video/"
+        },
+        {
+          "name": "Kisskh",
+          "description": "Offers a selection of Asian movies and series.",
+          "url": "https://kisskh.co/"
+        },
+        {
+          "name": "Vumoo",
+          "description": "A general movie streaming site with a wide selection.",
+          "url": "https://vumoo.mx/"
+        },
+        {
+          "name": "Pseudo Flix",
+          "description": "Provides various films for online streaming.",
+          "url": "https://pseudo-flix.pro/"
+        },
+        {
+          "name": "Levidia",
+          "description": "Focuses on streaming movies across different genres.",
+          "url": "https://www.levidia.ch/"
+        },
+        {
+          "name": "Binged",
+          "description": "Offers streaming of popular films and series.",
+          "url": "https://binged.in/"
+        },
+        {
+          "name": "Showflix",
+          "description": "A site for watching a variety of shows and movies.",
+          "url": "https://showflix.xyz/"
+        },
+        {
+          "name": "Tvids",
+          "description": "Offers a selection of TV shows and movies for streaming.",
+          "url": "https://www.tvids.net/"
+        },
+        {
+          "name": "AsianFlix",
+          "description": "Focuses on Asian entertainment content.",
+          "url": "https://www.asianflix.one/"
+        },
+        {
+          "name": "MyAsianTv",
+          "description": "A streaming site for Asian dramas and films.",
+          "url": "https://myasiantv.ac/"
+        },
+        {
+          "name": "DramaFull",
+          "description": "Dedicated to streaming drama series and films.",
+          "url": "https://dramafull.net/"
+        },
+        {
+          "name": "GoPlay",
+          "description": "Provides access to a range of movies and shows.",
+          "url": "https://goplay.pw/"
+        },
+        {
+          "name": "Cinevez",
+          "description": "A platform for streaming various films.",
+          "url": "https://www.cinevez.mov/"
+        }
+      ],
+      "Light Novals": [
+        {
+          "name": "MTLArchive",
+          "description": "A collection of various machine-translated novels.",
+          "url": "https://mtlarchive.com/"
+        },
+        {
+          "name": "NovelsEmperor",
+          "description": "Offers a wide range of translated web novels.",
+          "url": "https://novelsemperor.net/"
+        },
+        {
+          "name": "TicBic",
+          "description": "Features a selection of light novels and web novels for reading.",
+          "url": "https://ticbic.com/"
+        },
+        {
+          "name": "MTLNovel",
+          "description": "A platform for accessing machine-translated novels from raw sources.",
+          "url": "https://www.mtlnovel.com/"
+        },
+        {
+          "name": "LNMTL",
+          "description": "Specializes in the machine translation of light novels.",
+          "url": "https://lnmtl.com/"
+        },
+        {
+          "name": "FANMTL",
+          "description": "A community site for machine-translated novels and fan translations.",
+          "url": "https://www.fanmtl.com/"
+        },
+        {
+          "name": "DaoNovel",
+          "description": "A source for reading various genres of translated novels.",
+          "url": "https://daonovel.com/"
+        },
+        {
+          "name": "Wuxia",
+          "description": "Focused on wuxia and xianxia novels with translations available.",
+          "url": "https://wuxia.click/"
+        },
+        {
+          "name": "NovelBuddy",
+          "description": "A site offering a variety of translated novels for readers.",
+          "url": "https://novelbuddy.com/"
+        },
+        {
+          "name": "RoyalRoad",
+          "description": "A popular platform for original web novels and user-created stories.",
+          "url": "https://www.royalroad.com/"
+        },
+        {
+          "name": "Ranobes",
+          "description": "Features a collection of translated novels, primarily in fantasy genres.",
+          "url": "https://ranobes.top/"
+        },
+        {
+          "name": "Ffxs8",
+          "description": "Another resource for accessing machine translation of various novels.",
+          "url": "https://www.ffxs8.com/"
+        },
+        {
+          "name": "Feiszw",
+          "description": "Offers a mobile-friendly experience for reading translated content.",
+          "url": "https://m.feibzw.com/"
+        },
+        {
+          "name": "4ksw",
+          "description": "A platform providing access to a variety of web novels.",
+          "url": "http://www.4ksw.com/"
+        },
+        {
+          "name": "Shencou",
+          "description": "A site specializing in machine-translated novels and stories.",
+          "url": "https://m.shencou.com/"
+        },
+        {
+          "name": "Wangshuge",
+          "description": "A source for reading novels with a mobile-friendly layout.",
+          "url": "http://wap.wangshugu.net/"
+        },
+        {
+          "name": "Paozww",
+          "description": "Features various translated novels and light literature.",
+          "url": "https://wap.paozww.com/"
+        },
+        {
+          "name": "txt520",
+          "description": "Offers downloadable translated novels and stories.",
+          "url": "https://www.txt520.com/"
+        },
+        {
+          "name": "Jpxs123",
+          "description": "Another platform for reading translated novels online.",
+          "url": "https://jpxs123.com/"
+        },
+        {
+          "name": "Trxs",
+          "description": "A specialized site for machine translations of various novels.",
+          "url": "https://trxs.cc/"
+        }
+      ],
+      "Manga": [
+        {
+          "name": "Manganato",
+          "description": "A site for reading and exploring manga online.",
+          "url": "https://manganato.com/"
+        },
+        {
+          "name": "MangaDex",
+          "description": "A community-driven platform for high-quality manga.",
+          "url": "https://mangadex.org/"
+        },
+        {
+          "name": "Comick",
+          "description": "Offers a diverse collection of manga across different genres.",
+          "url": "https://comick.io/"
+        },
+        {
+          "name": "Mangafire",
+          "description": "Provides an extensive library of manga series to read.",
+          "url": "https://mangafire.to/"
+        },
+        {
+          "name": "Mangapark",
+          "description": "A platform for both manga reading and managing collections.",
+          "url": "https://mangapark.net/"
+        },
+        {
+          "name": "Bato",
+          "description": "Focuses on manga reading with user-friendly navigation.",
+          "url": "https://bato.to/"
+        },
+        {
+          "name": "Mangabuddy",
+          "description": "Known for its simple interface and vast manga selection.",
+          "url": "https://mangabuddy.com/"
+        },
+        {
+          "name": "Mangapill",
+          "description": "A resource for reading latest updates in manga titles.",
+          "url": "https://mangapill.com/"
+        },
+        {
+          "name": "Mangareader",
+          "description": "Features a wide variety of manga for enthusiasts.",
+          "url": "https://mangareader.to/"
+        },
+        {
+          "name": "FanFox",
+          "description": "A mobile-friendly site for reading popular manga.",
+          "url": "https://m.fanfox.net/"
+        },
+        {
+          "name": "Mangatown",
+          "description": "Offers access to a comprehensive range of manga series.",
+          "url": "https://m.mangatown.com/"
+        },
+        {
+          "name": "ReadComic",
+          "description": "A comic reading site featuring manga among other genres.",
+          "url": "https://readcomiconline.li/"
+        },
+        {
+          "name": "ComicExtra",
+          "description": "Provides a collection of comics and manga to read online.",
+          "url": "https://comixextra.com/"
+        },
+        {
+          "name": "Ninemanga",
+          "description": "A platform dedicated to manga reading and discovery.",
+          "url": "https://ninemanga.com/"
+        }
+      ],
+      "Anime": [
+        {
+          "name": "Hianime",
+          "description": "A platform to watch anime online.",
+          "url": "https://hianime.to/"
+        },
+        {
+          "name": "GogoAnime",
+          "description": "Offers a wide range of anime series and movies.",
+          "url": "https://gogotaku.info/"
+        },
+        {
+          "name": "Aniwave",
+          "description": "Stream various anime titles for free.",
+          "url": "https://aniwave.live/"
+        },
+        {
+          "name": "Animeowl",
+          "description": "A popular site for watching anime episodes.",
+          "url": "https://animeowl.live/"
+        },
+        {
+          "name": "KickAssAnime",
+          "description": "Features both subbed and dubbed anime.",
+          "url": "https://watchanime.io/"
+        },
+        {
+          "name": "Anix",
+          "description": "A source for streaming anime easily.",
+          "url": "https://anix.vc/"
+        },
+        {
+          "name": "Gojo",
+          "description": "Watch your favorite anime with ease.",
+          "url": "https://gojo.wtf/"
+        },
+        {
+          "name": "Wcostream",
+          "description": "Offers a variety of anime streams and episodes.",
+          "url": "https://wcostream.cc/"
+        },
+        {
+          "name": "Kayoanime",
+          "description": "Good for anime lovers looking for quality content.",
+          "url": "https://kayoanime.com/"
+        },
+        {
+          "name": "Animepahe",
+          "description": "Known for its extensive anime database.",
+          "url": "https://animepahe.ru/"
+        },
+        {
+          "name": "Shiroko",
+          "description": "Engage with favorite anime shows online.",
+          "url": "https://shiroko.co/"
+        },
+        {
+          "name": "Animefox",
+          "description": "Another good anime streaming option.",
+          "url": "https://animefox.sbs/"
+        },
+        {
+          "name": "Animeworld",
+          "description": "A comprehensive anime watching site.",
+          "url": "https://anime-world.in/"
+        },
+        {
+          "name": "Allanime",
+          "description": "Connects you to plenty of anime and manga content.",
+          "url": "https://allmanga.to/"
+        },
+        {
+          "name": "AniWatch",
+          "description": "Search results for AniWatch platform.",
+          "url": "https://www.google.com/search?q=AniWatch"
+        },
+        {
+          "name": "AniWorld",
+          "description": "Search for AniWorld's offerings.",
+          "url": "https://www.google.com/search?q=AniWorld"
+        },
+        {
+          "name": "Zoro",
+          "description": "A site for accessing various anime titles.",
+          "url": "https://aniwatch.to/"
+        },
+        {
+          "name": "Animania",
+          "description": "Search results related to Animania.",
+          "url": "https://www.google.com/search?q=animania"
+        },
+        {
+          "name": "9anime",
+          "description": "Find details about the 9anime platform.",
+          "url": "https://www.google.com/search?q=9anime"
+        },
+        {
+          "name": "Animekisa",
+          "description": "Explore search results for Animekisa.",
+          "url": "https://www.google.com/search?q=Animekisa"
+        },
+        {
+          "name": "Kiss - Anime",
+          "description": "Search for popular Kiss-Anime content.",
+          "url": "https://www.google.com/search?q=kiss+anime"
+        },
+        {
+          "name": "AnimiXPlay",
+          "description": "Search through AnimiXPlay offerings.",
+          "url": "https://www.google.com/search?q=AnimiXPlay"
+        },
+        {
+          "name": "Anime-World",
+          "description": "A series-focused section of Anime-World.",
+          "url": "https://anime-world.in/series/"
+        },
+        {
+          "name": "AnimeFox",
+          "description": "Another reliable option to watch anime online.",
+          "url": "https://animefox.io/"
+        },
+        {
+          "name": "Animeflick",
+          "description": "A site to find and watch a diverse range of anime.",
+          "url": "https://animeflick.net/"
+        },
+        {
+          "name": "Kimanime",
+          "description": "Offers various anime for streaming.",
+          "url": "https://kimanime.com/"
+        },
+        {
+          "name": "Animet",
+          "description": "A comprehensive anime streaming service.",
+          "url": "https://animet.tv/home"
+        }
+      ],
+      "NSFW": [
+        {
+          "name": "Manytoon",
+          "description": "A site for reading various manga and webtoons.",
+          "url": "https://manytoon.com/"
+        },
+        {
+          "name": "nhentai",
+          "description": "Known for a wide collection of hentai doujins.",
+          "url": "https://nhentai.net/"
+        },
+        {
+          "name": "Literotica",
+          "description": "An archive of erotic literature and stories.",
+          "url": "https://search.literotica.com/"
+        },
+        {
+          "name": "Toonily",
+          "description": "Features a selection of manhwa and webtoons.",
+          "url": "https://toonily.me/"
+        },
+        {
+          "name": "Hanime",
+          "description": "Offers streaming of adult anime content.",
+          "url": "https://hanime.tv/"
+        },
+        {
+          "name": "Hentaihaven",
+          "description": "A platform for watching hentai videos.",
+          "url": "https://hentaihaven.xxx/"
+        },
+        {
+          "name": "Doujins",
+          "description": "A source for doujinshi and fan-made comics.",
+          "url": "https://doujins.com/"
+        },
+        {
+          "name": "Hentaihere",
+          "description": "Stream a variety of hentai content online.",
+          "url": "https://hentaihere.com/"
+        },
+        {
+          "name": "Hentai2read",
+          "description": "Offers titles focusing on hentai and adult themes.",
+          "url": "https://hentai2read.com/"
+        },
+        {
+          "name": "Tsumino",
+          "description": "Known for its extensive database of adult manga.",
+          "url": "https://www.tsumino.com/"
+        },
+        {
+          "name": "8muses",
+          "description": "A hub for various adult comics and hentai.",
+          "url": "https://comics.8muses.com/"
+        },
+        {
+          "name": "A-hentai",
+          "description": "Offers a collection of animated hentai and videos.",
+          "url": "https://a-hentai.tv/"
+        },
+        {
+          "name": "Haho",
+          "description": "A site for exploring manga and adult content.",
+          "url": "https://haho.moe/"
+        }
+      ],
+      "Youtube Clients": [
+        {
+          "name": "LibreTube",
+          "description": "YouTube alternative (FOSS)",
+          "url": "https://github.com/libre-tube/LibreTube"
+        },
+        {
+          "name": "FluxTube",
+          "description": "YouTube alternative (FOSS)",
+          "url": "https://github.com/mu-fazil-vk/FluxTube"
+        },
+        {
+          "name": "VueTube",
+          "description": "YouTube alternative (Frontend framework - Vue.js)",
+          "url": "https://github.com/Frontesque/VueTube"
+        },
+        {
+          "name": "SongTube",
+          "description": "YouTube alternative (Focuses on music)",
+          "url": "https://github.com/SongTube/SongTube-App"
+        },
+        {
+          "name": "NewPipe",
+          "description": "YouTube alternative (FOSS, privacy-focused)",
+          "url": "https://github.com/TeamNewPipe/NewPipe"
+        },
+        {
+          "name": "ReVanced",
+          "description": "YouTube client patch (Improves functionality of official app)",
+          "url": "https://github.com/revanced"
+        },
+        {
+          "name": "NewPipeX",
+          "description": "YouTube alternative (Fork of NewPipe)",
+          "url": "https://github.com/NewPipeX/NewPipeX"
+        },
+        {
+          "name": "SkyTube",
+          "description": "YouTube alternative (FOSS, lightweight)",
+          "url": "https://github.com/SkyTubeTeam/SkyTube"
+        },
+        {
+          "name": "FreeTube",
+          "description": "YouTube alternative (FOSS, background playback)",
+          "url": "https://github.com/FreeTubeApp/FreeTube"
+        },
+        {
+          "name": "uYouPlus",
+          "description": "YouTube client patch (Improves functionality of official app)",
+          "url": "https://github.com/qnblackcat/uYouPlus"
+        },
+        {
+          "name": "SmartTubeNext",
+          "description": "YouTube alternative (Advanced features)",
+          "url": "https://github.com/yuliskov/SmartTubeNext"
+        },
+        {
+          "name": "Clipious",
+          "description": "YouTube alternative (FOSS, clipboard integration)",
+          "url": "https://github.com/lamarios/clipious"
+        },
+        {
+          "name": "Hyperion",
+          "description": "YouTube alternative (FOSS, focuses on ad-blocking)",
+          "url": "https://github.com/zt64/Hyperion"
+        },
+        {
+          "name": "Materialious",
+          "description": "YouTube alternative (Material Design theme)",
+          "url": "https://github.com/Materialious/Materialious"
+        },
+        {
+          "name": "LightTube",
+          "description": "YouTube alternative (Lightweight, data-saving)",
+          "url": "https://github.com/lighttube-org/LightTube-Android"
+        },
+        {
+          "name": "pstube",
+          "description": "YouTube alternative (Simple interface)",
+          "url": "https://github.com/prateekmedia/pstube"
+        }
+      ],
+      "Youtube Music": [
+        {
+          "name": "InnerTune",
+          "description": "YouTube Music client",
+          "url": "https://github.com/z-huang/InnerTune"
+        },
+        {
+          "name": "OuterTune",
+          "description": "Music player",
+          "url": "https://github.com/DD3Boh/OuterTune"
+        },
+        {
+          "name": "namida",
+          "description": "Music player",
+          "url": "https://github.com/namidaco/namida"
+        },
+        {
+          "name": "spmp",
+          "description": "YouTube Music client",
+          "url": "https://github.com/toasterofbread/spmp"
+        },
+        {
+          "name": "Spotube",
+          "description": "Spotify client",
+          "url": "https://github.com/KRTirtho/spotube"
+        },
+        {
+          "name": "SimpMusic",
+          "description": "Music app",
+          "url": "https://github.com/maxrave-dev/SimpMusic"
+        },
+        {
+          "name": "RiMusic",
+          "description": "YouTube Music app",
+          "url": "https://github.com/fast4x/RiMusic"
+        },
+        {
+          "name": "AbleMusicPlayer",
+          "description": "YouTube Music clone",
+          "url": "https://github.com/uditkarode/AbleMusicPlayer"
+        },
+        {
+          "name": "Ymusic",
+          "description": "Music streaming app",
+          "url": "https://ymusic.io/"
+        },
+        {
+          "name": "Musify",
+          "description": "Music streaming app",
+          "url": "https://github.com/gokadzev/Musify"
+        },
+        {
+          "name": "Serenity",
+          "description": "Music, meditation, and podcasts app",
+          "url": "https://github.com/YajanaRao/Serenity"
+        }
+      ],
+      "Apps for Streaming": [
+        {
+          "name": "AnimoHUB",
+          "description": "A streaming application Has Many OTT's, mainly for anime lovers, You'll find various languages DUB.",
+          "url": "https://t.me/animohub/784"
+        },
+        {
+          "name": "Miru",
+          "description": "A streaming application for accessing various multimedia content.",
+          "url": "https://github.com/miru-project/miru-app"
+        },
+        {
+          "name": "CloudStream 3",
+          "description": "A powerful streaming application for watching movies and shows.",
+          "url": "https://github.com/LagradOst/CloudStream-3"
+        },
+        {
+          "name": "Flixclusive",
+          "description": "Provides exclusive content for streaming enthusiasts.",
+          "url": "https://github.com/rhenwinch/Flixclusive"
+        },
+        {
+          "name": "CineMax",
+          "description": "A comprehensive movie streaming application.",
+          "url": "https://github.com/BeamlakAschalew/cinemax"
+        },
+        {
+          "name": "AnimeTV",
+          "description": "A platform dedicated to streaming anime series.",
+          "url": "https://github.com/amarullz/AnimeTV"
+        },
+        {
+          "name": "Mihon",
+          "description": "A streaming application for various TV shows and movies.",
+          "url": "https://github.com/mihonapp/mihon"
+        },
+        {
+          "name": "Yokai",
+          "description": "A streaming platform with a focus on unique content.",
+          "url": "https://github.com/null2264/yokai"
+        },
+        {
+          "name": "Awery",
+          "description": "Offers a variety of entertainment options including films and series.",
+          "url": "https://github.com/MrBoomDeveloper/Awery"
+        },
+        {
+          "name": "LNReader",
+          "description": "A reader application focused on light novels.",
+          "url": "https://github.com/LNReader/lnreader"
+        },
+        {
+          "name": "IReader",
+          "description": "A reading platform for various types of literature.",
+          "url": "https://github.com/IReaderorg/IReader"
+        },
+        {
+          "name": "Legado",
+          "description": "A versatile application for streaming and reading content.",
+          "url": "https://github.com/gedoor/legado"
+        },
+        {
+          "name": "QuickNovel",
+          "description": "Focused on providing quick access to novels.",
+          "url": "https://github.com/LagradOst/QuickNovel"
+        },
+        {
+          "name": "AnimeScrap",
+          "description": "An anime-focused streaming application with a variety of sources.",
+          "url": "https://github.com/fakeyatogod/AnimeScrap"
+        },
+        {
+          "name": "OtakuWorld",
+          "description": "A platform that offers manga and anime streaming.",
+          "url": "https://github.com/jakepurple13/OtakuWorld#mangaworld"
+        },
+        {
+          "name": "Animity",
+          "description": "Provides tools for streaming anime with community features.",
+          "url": "https://github.com/kl3jvi/animity"
+        },
+        {
+          "name": "Neko",
+          "description": "Focuses on a vast collection of multimedia content.",
+          "url": "https://github.com/CarlosEsco/Neko"
+        },
+        {
+          "name": "TachiyomiSY",
+          "description": "An open-source manga reader with various extensions.",
+          "url": "https://github.com/jobobby04/TachiyomiSY"
+        },
+        {
+          "name": "Kotatsu",
+          "description": "An anime and manga streaming platform with a cozy vibe.",
+          "url": "https://github.com/nv95/Kotatsu"
+        },
+        {
+          "name": "Tokeii",
+          "description": "A comprehensive streaming application for anime lovers.",
+          "url": "https://github.com/Sovan22/Tokeii"
+        },
+        {
+          "name": "Myne",
+          "description": "A unique platform for reading light novels and manga.",
+          "url": "https://github.com/Pool-Of-Tears/Myne"
+        },
+        {
+          "name": "NovelDokusha",
+          "description": "Dedicated to reading and discovering novels.",
+          "url": "https://github.com/nanihadesuka/NovelDokusha"
+        },
+        {
+          "name": "Aniyomi",
+          "description": "A versatile application for accessing anime and manga.",
+          "url": "https://github.com/jmir1/aniyomi"
+        },
+        {
+          "name": "Flixfox",
+          "description": "A web platform that aggregates streaming services.",
+          "url": "https://www.flixfox.in/"
+        },
+        {
+          "name": "OnStream",
+          "description": "Provides access to a variety of streaming media.",
+          "url": "https://onstream.to/"
+        },
+        {
+          "name": "FilmPlus",
+          "description": "Offers a variety of films available for streaming.",
+          "url": "https://filmplusapk.com/"
+        },
+        {
+          "name": "CloudStream",
+          "description": "A cloud-based streaming application providing various sources.",
+          "url": "https://github.com/recloudstream/cloudstream"
+        },
+        {
+          "name": "Castle Movies",
+          "description": "A platform for streaming a wide array",
+          "url": "http://castlemovies.in/"
+        },
+        {
+          "name": "Moviebox Pro",
+          "description": "A popular streaming app offering a vast library of movies and TV shows across multiple platforms.",
+          "url": "https://www.movieboxpro.app/"
+        },
+        {
+          "name": "Cinema HD",
+          "description": "A reliable app that allows users to stream high-definition movies and shows without subscription fees.",
+          "url": "https://cinemahd.app/v2-apk-8/"
+        },
+        {
+          "name": "Tea TV",
+          "description": "An entertaining streaming app that provides access to a variety of movies and TV series, featuring a user-friendly interface.",
+          "url": "https://teatv.org/new-version/"
+        },
+        {
+          "name": "Crackle",
+          "description": "A free streaming service offering an extensive library of movies and TV shows, supported by advertisements.",
+          "url": "https://www.crackle.com/"
+        },
+        {
+          "name": "EV01 Net",
+          "description": "A platform for accessing a wide range of movies and TV shows for free, with minimal ads and multiple streaming options.",
+          "url": "https://ev01.sx/android-movies-apk"
+        }
+      ]
+    }
+  },
+  "Fake Identity": {
+    "subcategories": {
+      "Temporary Phone Numbers": [
+        {
+          "name": "hs3x",
+          "description": "A web service for receiving SMS messages without revealing your personal phone number.",
+          "url": "http://hs3x.com/"
+        },
+        {
+          "name": "smsget",
+          "description": "Free SMS receiving service that provides various temporary phone numbers.",
+          "url": "http://smsget.net/"
+        },
+        {
+          "name": "sms-online",
+          "description": "A platform to receive SMS online anonymously without registration.",
+          "url": "http://sms-online.co/"
+        },
+        {
+          "name": "catchsms",
+          "description": "Quick access to disposable phone numbers to receive SMS verification codes.",
+          "url": "http://catchsms.com/"
+        },
+        {
+          "name": "sms-receive",
+          "description": "A straightforward site for receiving SMS messages on temporary numbers.",
+          "url": "http://sms-receive.net/"
+        },
+        {
+          "name": "sellaite",
+          "description": "An online SMS receiving service providing numbers from different countries.",
+          "url": "http://sms.sellaite.com/"
+        },
+        {
+          "name": "receivefreesms.net",
+          "description": "A free service for receiving SMS online without a phone.",
+          "url": "http://receivefreesms.net/"
+        },
+        {
+          "name": "receive-a-sms",
+          "description": "Allows you to use temporary phone numbers to receive SMS messages anonymously.",
+          "url": "https://receive-a-sms.com/"
+        },
+        {
+          "name": "receivesmsonline.in",
+          "description": "An easy-to-use SMS receiving service for users in India.",
+          "url": "http://receivesmsonline.in/"
+        },
+        {
+          "name": "receivefreesms.com",
+          "description": "Another site for free SMS reception on disposable numbers.",
+          "url": "http://receivefreesms.com/"
+        },
+        {
+          "name": "receivesmsonline.me",
+          "description": "Offers a variety of disposable phone numbers for SMS verification.",
+          "url": "http://receivesmsonline.me/"
+        },
+        {
+          "name": "smsreceivefree",
+          "description": "Free SMS reception service for verification codes and other messages.",
+          "url": "http://smsreceivefree.com/"
+        },
+        {
+          "name": "smsreceiveonline.com",
+          "description": "Provides temporary numbers to receive SMS online for free.",
+          "url": "https://smsreceiveonline.com/"
+        },
+        {
+          "name": "receive-sms-online",
+          "description": "Another option to receive SMS messages online efficiently.",
+          "url": "https://receive-sms-online.com/"
+        },
+        {
+          "name": "receivesmsonline",
+          "description": "A resourceful site for obtaining a temporary phone number for SMS reception.",
+          "url": "https://www.receivesmsonline.net/"
+        },
+        {
+          "name": "temp-mails Number",
+          "description": "Allows users to receive SMS on temporary numbers with ease.",
+          "url": "https://www.temp-mails.com/number"
+        },
+        {
+          "name": "freeonlinephone",
+          "description": "Wall of disposable phone numbers available for receiving SMS messages.",
+          "url": "https://www.freeonlinephone.org/"
+        },
+        {
+          "name": "getfreesmsnumber",
+          "description": "Quick access to various temporary numbers for receiving SMS.",
+          "url": "https://getfreesmsnumber.com/"
+        }
+      ],
+      "Temporary Email Addresses": [
+        {
+          "name": "MailDrop",
+          "description": "Disposable email service that allows users to create temporary email addresses for receiving messages.",
+          "url": "https://maildrop.cc/"
+        },
+        {
+          "name": "TempR",
+          "description": "Simple and user-friendly service for creating disposable email addresses.",
+          "url": "https://tempr.email/"
+        },
+        {
+          "name": "TempMail",
+          "description": "Offers users temporary email addresses to sign up for services without revealing their real email addresses.",
+          "url": "https://tempmail.net/"
+        },
+        {
+          "name": "Temp-Mail",
+          "description": "Provides temporary email services that are valid for a short duration.",
+          "url": "https://temp-mail.org/"
+        },
+        {
+          "name": "Moakt",
+          "description": "A modern disposable email service for protecting your real email from spam.",
+          "url": "https://www.moakt.com/"
+        },
+        {
+          "name": "TempMailo",
+          "description": "A free temporary email address service that helps protect your privacy online.",
+          "url": "https://tempmailo.com/"
+        },
+        {
+          "name": "EmailOnDeck",
+          "description": "Offers disposable emails with added security against spam.",
+          "url": "https://www.emailondeck.com/"
+        },
+        {
+          "name": "GuerrillaMail",
+          "description": "Provides disposable email addresses that can be used for a limited time, perfect for signing up for services safely.",
+          "url": "https://www.guerrillamail.com/"
+        },
+        {
+          "name": "SmailPro",
+          "description": "An easy solution for receiving temporary emails without the need for personal information.",
+          "url": "https://smailpro.com/"
+        },
+        {
+          "name": "Gmailnator",
+          "description": "Generates temporary Gmail addresses for quick and anonymous use, ensuring your real email remains private.",
+          "url": "https://gmailnator.com/"
+        }
+      ],
+      "Fake Identity Generators": [
+        {
+          "name": "FakeNa",
+          "description": "Generate fake names and identities that are useful for testing, registrations, and online anonymity.",
+          "url": "https://fakena.me/"
+        },
+        {
+          "name": "FauxID",
+          "description": "A service that allows users to create fake identification information for various purposes.",
+          "url": "https://fauxid.com/"
+        },
+        {
+          "name": "FakeXY",
+          "description": "Create unique fake identities, including names, addresses, and personal information for anonymous usage.",
+          "url": "https://www.fakexy.com/"
+        },
+        {
+          "name": "Elfqrin",
+          "description": "Generate various types of fake IDs and identities for anonymity and online testing.",
+          "url": "https://www.elfqrin.com/fakeid.php8"
+        },
+        {
+          "name": "Fake Name Generator",
+          "description": "A popular tool for generating random fake names along with addresses and other pertinent information.",
+          "url": "https://www.fakenamegenerator.com/"
+        },
+        {
+          "name": "Fake Person Generator",
+          "description": "Creates entire fake identities, including personal and demographic details, for testing and development purposes.",
+          "url": "https://www.fakepersongenerator.com/"
+        },
+        {
+          "name": "Fake Address Generator",
+          "description": "Quickly generate random addresses useful for testing forms and applications that require location data.",
+          "url": "https://www.fakeaddressgenerator.com/"
+        },
+        {
+          "name": "Data Fake Generator",
+          "description": "A platform for generating fake data sets, including personal information suitable for various testing scenarios.",
+          "url": "https://datafakegenerator.com/generador.php"
+        },
+        {
+          "name": "Name Generators",
+          "description": "A resource for creating random fake names for reports, tests, or other applications.",
+          "url": "http://namegenerators.org/fake-name-generator-gr"
+        }
+      ]
+    }
+  },
+  "Free Resources": {
+    "subcategories": {
+      "Programming Language": [
+        {
+          "name": "C - Programming",
+          "description": "A foundational programming language known for its performance and close system hardware manipulation.",
+          "url": "https://www.learn-c.org/"
+        },
+        {
+          "name": "Python",
+          "description": "A versatile and widely-used programming language known for its readability and simplicity.",
+          "url": "https://www.codecademy.com/learn/learn-python-3"
+        },
+        {
+          "name": "Java",
+          "description": "A popular, object-oriented language commonly used for building web applications and Android apps.",
+          "url": "https://www.codecademy.com/learn/learn-java"
+        },
+        {
+          "name": "JavaScript",
+          "description": "A core technology of the web, used for client-side development to create interactive websites.",
+          "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+        },
+        {
+          "name": "C++",
+          "description": "An extension of C that includes object-oriented features and is widely used in system/software development.",
+          "url": "https://www.learncpp.com/"
+        },
+        {
+          "name": "C#",
+          "description": "A modern, object-oriented language developed by Microsoft, primarily used for Windows applications.",
+          "url": "https://learn.microsoft.com/en-us/dotnet/csharp/"
+        },
+        {
+          "name": "PHP",
+          "description": "A server-side scripting language designed for web development and creating dynamic web pages.",
+          "url": "https://www.w3schools.com/php/"
+        },
+        {
+          "name": "Swift",
+          "description": "A powerful and intuitive programming language for iOS and macOS app development.",
+          "url": "https://www.swift.org/documentation/#the-swift-programming-language"
+        },
+        {
+          "name": "Ruby",
+          "description": "Known for its simplicity and productivity, Ruby is a dynamic language often used for web development.",
+          "url": "https://www.codecademy.com/learn/learn-ruby"
+        },
+        {
+          "name": "Go (Golang)",
+          "description": "A statically typed language designed for simplicity and efficiency, commonly used in backend development.",
+          "url": "https://tour.golang.org/welcome/"
+        },
+        {
+          "name": "TypeScript",
+          "description": "A superset of JavaScript that adds static types, making it easier to debug and maintain larger applications.",
+          "url": "https://www.typescriptlang.org/docs/"
+        },
+        {
+          "name": "Rust",
+          "description": "A systems programming language that prioritizes safety and performance, often used in concurrent programming.",
+          "url": "https://doc.rust-lang.org/book/"
+        },
+        {
+          "name": "Kotlin",
+          "description": "A modern programming language that is fully interoperable with Java and used for Android development.",
+          "url": "https://kotlinlang.org/docs/home.html"
+        },
+        {
+          "name": "Shell Scripting (Bash)",
+          "description": "A scripting language for task automation and configuration on Unix-based systems.",
+          "url": "http://www.tldp.org/LDP/Bash-Beginners-Guide/html/"
+        },
+        {
+          "name": "Objective-C",
+          "description": "A programming language that adds Smalltalk-style messaging to the C programming language, used in iOS and macOS development.",
+          "url": "https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ProgrammingWithObjectiveC/Introduction/Introduction.html"
+        },
+        {
+          "name": "Dart",
+          "description": "A client-optimized language for fast apps on any platform, often used with Flutter for mobile development.",
+          "url": "https://dart.dev/guides/language/language-tour"
+        },
+        {
+          "name": "R",
+          "description": "A programming language for statistical computing and graphics, widely used among statisticians and data miners.",
+          "url": "https://www.tutorialspoint.com/r/index.htm"
+        },
+        {
+          "name": "MATLAB",
+          "description": "A high-performance language for technical computing, particularly in mathematics and engineering.",
+          "url": "https://www.mathworks.com/learn/tutorials/matlab-onramp.html"
+        },
+        {
+          "name": "Scala",
+          "description": "A hybrid functional/object-oriented programming language that runs on the JVM and is known for its concise code.",
+          "url": "https://docs.scala-lang.org/"
+        },
+        {
+          "name": "Lua",
+          "description": "A lightweight scripting language designed for embedded use in applications.",
+          "url": "https://www.tutorialspoint.com/lua/index.htm"
+        },
+        {
+          "name": "MATLAB",
+          "description": "A high-level language and interactive environment for numerical computation, visualization, and programming.",
+          "url": "https://www.mathworks.com/learn/tutorials/matlab-onramp.html"
+        },
+        {
+          "name": "Scala",
+          "description": "A powerful language that combines functional and object-oriented programming, running on the Java Virtual Machine (JVM).",
+          "url": "https://docs.scala-lang.org/"
+        },
+        {
+          "name": "Lua",
+          "description": "A lightweight, fast, and embeddable scripting language often used in game development.",
+          "url": "https://www.tutorialspoint.com/lua/index.htm"
+        },
+        {
+          "name": "Groovy",
+          "description": "A dynamic language for the Java Platform that is known for its ease of use and integration with Java.",
+          "url": "https://groovy-lang.org/documentation.html"
+        },
+        {
+          "name": "Perl",
+          "description": "A highly capable, feature-rich programming language with powerful text processing capabilities, often used for web development and system administration.",
+          "url": "https://learn.perl.org/"
+        },
+        {
+          "name": "Haskell",
+          "description": "A standardized, general-purpose purely functional programming language known for its strong static typing and lazy evaluation.",
+          "url": "http://learnyouahaskell.com/"
+        },
+        {
+          "name": "Julia",
+          "description": "A high-level, high-performance programming language for technical computing, with capabilities for numerical and scientific computing.",
+          "url": "https://docs.julialang.org/"
+        },
+        {
+          "name": "PowerShell Scripting",
+          "description": "A task automation and configuration management framework from Microsoft, built on .NET.",
+          "url": "https://docs.microsoft.com/en-us/powershell/"
+        },
+        {
+          "name": "VB.NET",
+          "description": "An object-oriented programming language developed by Microsoft that is easy to learn and widely used for Windows applications.",
+          "url": "https://learn.microsoft.com/en-us/dotnet/visual-basic/"
+        },
+        {
+          "name": "COBOL",
+          "description": "A legacy programming language primarily used in business, finance, and administrative systems for companies and governments.",
+          "url": "https://github.com/openmainframeproject/cobol-programming-course"
+        },
+        {
+          "name": "Ada",
+          "description": "A high-level programming language used in systems where reliability and efficiency are critical, often used in aerospace and defense.",
+          "url": "https://learn.adacore.com/"
+        },
+        {
+          "name": "Fortran",
+          "description": "One of the oldest high-level programming languages, particularly strong in numerical computation and scientific programming.",
+          "url": "https://www.tutorialspoint.com/fortran/index.htm"
+        },
+        {
+          "name": "Elixir",
+          "description": "A functional, concurrent language built on the Erlang VM, known for its scalable and maintainable applications.",
+          "url": "https://elixirschool.com/"
+        },
+        {
+          "name": "Django (Python Framework)",
+          "description": "A high-level Python web framework that encourages rapid development and clean, pragmatic design.",
+          "url": "https://djangoforbeginners.com/"
+        }
+      ],
+      "Cybersecurity Skills": [
+        {
+          "name": "Ethical Hacking",
+          "description": "A course that teaches the principles and practices of ethical hacking and penetration testing.",
+          "url": "https://www.cybrary.it/course/ethical-hacking/"
+        },
+        {
+          "name": "Penetration Testing",
+          "description": "Learn to use Metasploit, a powerful tool for penetration testing and security assessment.",
+          "url": "https://www.metasploitunleashed.com/"
+        },
+        {
+          "name": "Bug Hunting",
+          "description": "An open platform where researchers can report vulnerabilities and earn bounties.",
+          "url": "https://www.openbugbounty.org/"
+        },
+        {
+          "name": "Bug Hunting 2",
+          "description": "A free class for budding hackers that provides foundational knowledge for bug hunting.",
+          "url": "https://www.hacker101.com/"
+        },
+        {
+          "name": "Security+",
+          "description": "A comprehensive training course for CompTIA Security+, covering essential security concepts.",
+          "url": "https://www.professormesser.com/security-plus/sy0-501/sy0-501-training-course/"
+        },
+        {
+          "name": "Web Application Security",
+          "description": "A detailed guide on securing web applications with best practices and testing techniques.",
+          "url": "https://owasp.org/www-project-web-security-testing-guide/"
+        },
+        {
+          "name": "Network Security",
+          "description": "Resources and information about network security from the SANS Internet Storm Center.",
+          "url": "https://isc.sans.edu/"
+        },
+        {
+          "name": "Incident Response",
+          "description": "A guide and resources for preparing for and responding to security incidents.",
+          "url": "https://www.incidentresponse.com/"
+        },
+        {
+          "name": "Malware Analysis",
+          "description": "Articles and resources focused on understanding and analyzing malware.",
+          "url": "https://blog.malwarebytes.com/category/malware-101/"
+        },
+        {
+          "name": "Digital Forensics",
+          "description": "Resources and training focused on recovering and analyzing data from digital devices.",
+          "url": "http://www.digital-forensic.org/"
+        },
+        {
+          "name": "Threat Intelligence",
+          "description": "A repository of information on cyber adversaries and the tactics, techniques, and procedures they use.",
+          "url": "https://attack.mitre.org/"
+        },
+        {
+          "name": "Security Certifications",
+          "description": "Information about various security certifications offered by CompTIA.",
+          "url": "https://www.comptia.org/certifications/security"
+        },
+        {
+          "name": "Web Application Security (OWASP)",
+          "description": "The OWASP Foundation's resources dedicated to improving the security of software.",
+          "url": "https://owasp.org/"
+        },
+        {
+          "name": "Cloud Security",
+          "description": "Resources and tools to help secure data in the cloud.",
+          "url": "https://cloudsecurityalliance.org/"
+        },
+        {
+          "name": "Security Blogs and News",
+          "description": "Featuring articles from renowned security expert Brian Krebs on news and insights.",
+          "url": "https://krebsonsecurity.com/"
+        },
+        {
+          "name": "Security Blogs and News 2",
+          "description": "Bruce Schneier's blog focusing on security, technology, and privacy issues.",
+          "url": "https://www.schneier.com/"
+        },
+        {
+          "name": "Cybersecurity Podcasts",
+          "description": "A dive into the world of cybercrime and security through engaging podcasts.",
+          "url": "https://darknetdiaries.com/"
+        },
+        {
+          "name": "Cybersecurity Podcasts 2",
+          "description": "Security Now podcast with topics on security news and interviews with experts.",
+          "url": "https://www.grc.com/securitynow.htm"
+        },
+        {
+          "name": "Security Training Platforms",
+          "description": "Various courses and resources to learn about cybersecurity.",
+          "url": "https://www.cybrary.it/"
+        },
+        {
+          "name": "Security Training Platforms 2",
+          "description": "Courses focused on ethical hacking for web applications.",
+          "url": "https://www.pluralsight.com/courses/ethical-hacking-website-web-applications"
+        },
+        {
+          "name": "Mobile Security (OWASP)",
+          "description": "A comprehensive guide to ensuring mobile application security.",
+          "url": "https://owasp.org/www-project-mobile-security-testing-guide/"
+        },
+        {
+          "name": "Social Engineering Awareness",
+          "description": "Resources for understanding and preventing social engineering attacks.",
+          "url": "https://www.social-engineer.org/"
+        },
+        {
+          "name": "Wireless Network Security",
+          "description": "Tools and resources for securing wireless networks.",
+          "url": "https://wigle.net/"
+        },
+        {
+          "name": "Cybersecurity Conferences",
+          "description": "DEF CON is one of the world's largest and oldest hacker conventions.",
+          "url": "https://www.defcon.org/"
+        },
+        {
+          "name": "Cybersecurity Conferences 2",
+          "description": "Black Hat provides security professionals with the latest in information security research, trends, and techniques.",
+          "url": "https://www.blackhat.com/"
+        },
+        {
+          "name": "Legal and Ethical Considerations",
+          "description": "The Electronic Frontier Foundation provides insights into the legal aspect of technology, privacy, and civil liberties.",
+          "url": "https://www.eff.org/"
+        },
+        {
+          "name": "Internet of Things (IoT) Security",
+          "description": "Resources and guidance for securing IoT devices and networks.",
+          "url": "https://www.iotsecurityfoundation.org/"
+        }
+      ],
+      "Professinal Skills": [
+        {
+          "name": "Communication Skills",
+          "description": "Free online courses to enhance your communication abilities.",
+          "url": "https://alison.com/tag/communication-skills"
+        },
+        {
+          "name": "Communication Skills 2",
+          "description": "A course focused on techniques for effective communication.",
+          "url": "https://www.mygreatlearning.com/academy/learn-for-free/courses/effective-communication"
+        },
+        {
+          "name": "Problem Solving",
+          "description": "Improve your JavaScript skills through this 10-day coding challenge.",
+          "url": "https://www.hackerrank.com/domains/tutorials/10-days-of-javascript"
+        },
+        {
+          "name": "Adaptability",
+          "description": "Courses aimed at improving your adaptability in various work environments.",
+          "url": "https://www.linkedin.com/learning/topics/adaptability"
+        },
+        {
+          "name": "Critical Thinking",
+          "description": "Develop your critical thinking and problem-solving skills through this course from RIT.",
+          "url": "https://www.edx.org/learn/critical-thinking-skills/rochester-institute-of-technology-critical-thinking-problem-solving"
+        },
+        {
+          "name": "Leadership",
+          "description": "Explore the foundational skills necessary for effective leadership.",
+          "url": "https://www.linkedin.com/learning/leadership-foundations"
+        },
+        {
+          "name": "Data Analysis Google",
+          "description": "Google's Analytics Academy offers free courses on data analysis and Google Analytics.",
+          "url": "https://analytics.google.com/analytics/academy/"
+        },
+        {
+          "name": "Data Analysis Coursera",
+          "description": "A specialization in data visualization techniques through Coursera.",
+          "url": "https://www.coursera.org/specializations/data-visualization"
+        },
+        {
+          "name": "Digital Literacy",
+          "description": "A comprehensive program by Google to enhance your digital skills.",
+          "url": "https://learndigital.withgoogle.com/digitalgarage"
+        },
+        {
+          "name": "Networking Skills",
+          "description": "Courses to build a solid foundation in networking concepts.",
+          "url": "https://www.netacad.com/courses/networking/https://skillsforall.com/course/networking-basics"
+        },
+        {
+          "name": "Emotional Intelligence",
+          "description": "Learn about emotional intelligence and how to apply it in personal and professional contexts.",
+          "url": "https://online.hbs.edu/blog/post/emotional-intelligence-skills"
+        }
+      ],
+      "Cheat Sheets": [
+        {
+          "name": "Cheatsheets",
+          "description": "ultimate repository of sheets and quick references meticulously crafted by the open community boost your productivity.",
+          "url": "https://cheatsheets.zip/"
+        },
+        {
+          "name": "Quick Ref",
+          "description": "A collection of quick reference guides for various programming languages and tools.",
+          "url": "https://quickref.me/"
+        },
+        {
+          "name": "Code with Harry",
+          "description": "An educational platform offering tutorials and resources for different programming languages.",
+          "url": "https://www.codewithharry.com/"
+        },
+        {
+          "name": "Codecademy",
+          "description": "The Codecademy Cheatsheets page offers a comprehensive collection of quick reference guides for various programming languages and technologies.",
+          "url": "https://www.codecademy.com/resources/cheatsheets/all"
+        },
+        {
+          "name": "GeekForGeeks",
+          "description": "A popular educational website providing tutorials, coding problems, and technical articles for programmers.",
+          "url": "https://www.geeksforgeeks.org/"
+        },
+        {
+          "name": "Interview Bit",
+          "description": "A platform dedicated to helping users prepare for technical interviews with coding challenges and interview questions.",
+          "url": "https://www.interviewbit.com/"
+        },
+        {
+          "name": "Edureks",
+          "description": "Offers a collection of cheat sheets and educational resources across various technology topics.",
+          "url": "https://www.edureka.co/blog/cheatsheets/"
+        },
+        {
+          "name": "CodeBurst",
+          "description": "A platform featuring articles, coding tutorials, and insights from developers worldwide.",
+          "url": "https://codeburst.io/"
+        },
+        {
+          "name": "Exercism",
+          "description": "A coding practice platform where users can solve exercises and receive mentorship in various programming languages.",
+          "url": "https://exercism.org/"
+        },
+        {
+          "name": "Alta3",
+          "description": "Provides educational posters and resources for various programming languages and concepts.",
+          "url": "https://alta3.com/posters/"
+        },
+        {
+          "name": "DevHints",
+          "description": "A collection of cheatsheets for developers covering various programming languages and frameworks.",
+          "url": "https://devhints.io/"
+        },
+        {
+          "name": "GitSheet",
+          "description": "A handy resource for quick references and commands for using Git.",
+          "url": "https://gitsheet.wtf/"
+        },
+        {
+          "name": "Overapi",
+          "description": "A compilation of cheat sheets covering multiple programming languages and technologies.",
+          "url": "https://overapi.com/"
+        },
+        {
+          "name": "GmailCity",
+          "description": "A resource focused on Gmail tips, tricks, and tools to enhance productivity.",
+          "url": "https://gmailcity.com/"
+        },
+        {
+          "name": "CheatoGraphy",
+          "description": "A site that offers a vast collection of cheat sheets for various subjects and programming languages.",
+          "url": "https://cheatography.com/"
+        },
+        {
+          "name": "CodeHouse",
+          "description": "A resource providing cheat sheets and coding shortcuts for developers.",
+          "url": "https://codehouse.vercel.app/app"
+        }
+      ],
+      "Discounted Coupons": [
+        {
+          "name": "SharewareOnSale",
+          "description": "A website that offers software discounts, free trials, and limited-time offers for various applications.",
+          "url": "https://sharewareonsale.com/"
+        },
+        {
+          "name": "BitsDuJour",
+          "description": "Provides daily deals on software, including significant discounts and giveaway opportunities.",
+          "url": "https://www.bitsdujour.com/"
+        },
+        {
+          "name": "Giveaway of the Day",
+          "description": "Offers a new free software application each day to download and try, usually with promotional offers.",
+          "url": "https://www.giveawayoftheday.com/"
+        },
+        {
+          "name": "Net Load",
+          "description": "A platform for discovering various free downloads, software giveaways, and technological offers.",
+          "url": "https://net-load.com/"
+        },
+        {
+          "name": "Vovsoft Giveaway",
+          "description": "A site offering giveaways for software developed by Vovsoft, including a range of useful applications.",
+          "url": "https://vovsoft.com/"
+        },
+        {
+          "name": "Giveaways Networks",
+          "description": "A hub for various giveaways and promotional materials across different categories and platforms.",
+          "url": "https://giveawaysnetworks.net/"
+        },
+        {
+          "name": "DiscUdemy",
+          "description": "A platform providing discounts and free access to online courses, primarily from Udemy.",
+          "url": "https://www.discudemy.com/"
+        },
+        {
+          "name": "Coupon Scorpion",
+          "description": "A website dedicated to aggregating various coupons and discounts for online shopping.",
+          "url": "https://couponscorpion.com/"
+        },
+        {
+          "name": "Best Coupon Hunter",
+          "description": "A platform that collects the best available coupon codes for a variety of online stores.",
+          "url": "https://bestcouponhunter.com/"
+        },
+        {
+          "name": "LearnViral",
+          "description": "Offers free and discounted coupons for Udemy courses, making online learning more accessible.",
+          "url": "https://udemycoupon.learnviral.com/"
+        },
+        {
+          "name": "Real Discount",
+          "description": "A site showcasing genuine discount offers and coupon codes for various products and services.",
+          "url": "https://www.real.discount/"
+        },
+        {
+          "name": "Mega Courses",
+          "description": "Aggregates free online courses from various providers, enabling learners to expand their knowledge..",
+          "url": "https://megacourses.net/"
+        },
+        {
+          "name": "Promo Coupons",
+          "description": "A resource for finding promotional coupons for both online and local businesses.",
+          "url": "https://www.promocoupons24.com/"
+        },
+        {
+          "name": "FreeBies Global",
+          "description": "A site offering a wide range of free products, discounts, samples, and promotional items.",
+          "url": "https://freebiesglobal.com/"
+        },
+        {
+          "name": "CourseCity",
+          "description": "An educational platform providing access to free courses and learning resources across various subjects.",
+          "url": "https://coursesity.com/"
+        },
+        {
+          "name": "999CourseSale",
+          "description": "A website that lists free courses and educational resources to help learners find valuable opportunities.",
+          "url": "https://999coursesale.com/freebie-courses-list.php"
+        },
+        {
+          "name": "CourseCity Alt",
+          "description": "An alternative section of CourseCity focused on providing free Udemy courses to users.",
+          "url": "https://coursesity.com/provider/free/udemy-courses?ref=banner"
+        }
+      ],
+      "Machine Learning": [
+        {
+          "name": "Google's Machine Learning Crash Course",
+          "description": "A free course providing a quick introduction to machine learning, covering all foundational aspects.",
+          "url": "https://developers.google.com/machine-learning/crash-course/"
+        },
+        {
+          "name": "Andrew Ng's Machine Learning Coursera Course",
+          "description": "A widely recognized course that covers the basics of machine learning algorithms and best practices.",
+          "url": "https://www.coursera.org/learn/machine-learning"
+        },
+        {
+          "name": "Intro to Machine Learning",
+          "description": "Introducing machine learning concepts with practical exercises on Kaggle.",
+          "url": "https://www.kaggle.com/learn/intro-to-machine-learning"
+        },
+        {
+          "name": "Intermediate Machine Learning",
+          "description": "A course to enhance your existing machine learning knowledge with intermediate concepts and techniques.",
+          "url": "https://www.kaggle.com/learn/intermediate-machine-learning"
+        },
+        {
+          "name": "Understanding Machine Learning: From Theory to Algorithms",
+          "description": "A book that provides a theoretical understanding of the field of machine learning.",
+          "url": "https://www.cs.huji.ac.il/\\~shais/UnderstandingMachineLearning/copy.html"
+        },
+        {
+          "name": "Probability and Statistics",
+          "description": "MIT's course on probability and statistics, essential for understanding machine learning algorithms.",
+          "url": "https://ocw.mit.edu/courses/mathematics/18-05-introduction-to-probability-and-statistics-spring-2014/index.htm"
+        },
+        {
+          "name": "freeCodeCamp's courses for machine learning",
+          "description": "A variety of free coding lessons that cover machine learning topics and projects.",
+          "url": "https://www.freecodecamp.org/learn/"
+        },
+        {
+          "name": "A quick review of linear algebra concepts relevant to machine learning",
+          "description": "Understand the mathematical foundations necessary for algorithms in machine learning.",
+          "url": "http://www.deeplearningbook.org/contents/linear\\_algebra.html"
+        },
+        {
+          "name": "Calculus",
+          "description": "A brief overview of calculus concepts important for machine learning derived from Stanford's CS231n course.",
+          "url": "http://cs231n.stanford.edu/handouts/derivatives.pdf"
+        },
+        {
+          "name": "Statistical concepts for machine learning",
+          "description": "A reference for statistical techniques important for data analysis and machine learning applications.",
+          "url": "http://www-bcf.usc.edu/\\~gareth/ISL/"
+        },
+        {
+          "name": "AWS Machine Learning Tools",
+          "description": "An extensive guide to the various machine learning tools available on AWS.",
+          "url": "https://www-freecodecamp-org.cdn.ampproject.org/c/s/www.freecodecamp.org/news/aws-machine-learning-tools-the-complete-guide/amp/"
+        },
+        {
+          "name": "Introductory Primer",
+          "description": "An introduction to machine learning theory and concepts for beginners.",
+          "url": "https://www.toptal.com/machine-learning/machine-learning-theory-an-introductory-primer"
+        },
+        {
+          "name": "Machine Learning Roadmap",
+          "description": "A visual guide outlining the learning path for becoming proficient in machine learning.",
+          "url": "https://whimsical.com/machine-learning-roadmap-2020-CA7f3ykvXpnJ9Az32vYXva"
+        },
+        {
+          "name": "TinyML Course",
+          "description": "A course focused on implementing machine learning on low-power devices.",
+          "url": "https://www.edx.org/professional-certificate/harvardx-tiny-machine-learning"
+        },
+        {
+          "name": "Deep Learning - University of Buffalo",
+          "description": "Comprehensive course materials on deep learning provided by the University of Buffalo.",
+          "url": "https://cedar.buffalo.edu/\\~srihari/CSE676/index.html"
+        },
+        {
+          "name": "Machine Learning Introduction with Python",
+          "description": "An introduction to machine learning using Python geared toward practical implementations.",
+          "url": "https://www.dataquest.io/path/machine-learning-intro-with-python/"
+        },
+        {
+          "name": "Machine Learning Guide Podcast",
+          "description": "A podcast exploring various topics in machine learning, featuring expert guests.",
+          "url": "https://ocdevel.com/mlg"
+        },
+        {
+          "name": "An Introduction to Statistical Learning with Applications in R",
+          "description": "A prominent textbook that explores statistical learning techniques with practical applications.",
+          "url": "https://www.statlearning.com/"
+        },
+        {
+          "name": "Neural Networks Theory",
+          "description": "A comprehensive YouTube playlist exploring the theory behind neural networks, perfect for deepening your understanding.",
+          "url": "https://youtube.com/playlist?list=PLblh5JKOoLUIxGDQs4LFFD--41Vzf-ME1"
+        },
+        {
+          "name": "Open AI GPT-3 documentation",
+          "description": "Official documentation for OpenAI's GPT-3, detailing its capabilities, uses, and guidelines for implementation.",
+          "url": "https://beta.openai.com/docs/introduction/overview"
+        }
+      ],
+      "Free Hosting": [
+        {
+          "name": "Netlify",
+          "description": "A platform for hosting static websites and web applications.",
+          "url": "https://www.netlify.com/"
+        },
+        {
+          "name": "Heroku",
+          "description": "A cloud platform that enables companies to build, run, and operate applications entirely in the cloud.",
+          "url": "https://www.heroku.com/"
+        },
+        {
+          "name": "Vercel",
+          "description": "Provides hosting and serverless functions, optimized for frontend frameworks.",
+          "url": "https://vercel.com/"
+        },
+        {
+          "name": "Fly.io",
+          "description": "Offers a platform to run applications close to users globally with ease.",
+          "url": "https://fly.io/"
+        },
+        {
+          "name": "Github Pages",
+          "description": "A service that allows you to host static websites directly from a GitHub repository.",
+          "url": "http://pages.github.com/"
+        },
+        {
+          "name": "Gitlab Pages",
+          "description": "A feature within GitLab for hosting static websites from repositories.",
+          "url": "http://docs.gitlab.com/ee/user/project/pages"
+        },
+        {
+          "name": "Deta",
+          "description": "A platform for building and deploying serverless applications effortlessly.",
+          "url": "https://www.deta.sh/"
+        },
+        {
+          "name": "InfinityFree",
+          "description": "A free hosting service with unlimited disk space and bandwidth.",
+          "url": "https://infinityfree.net/"
+        },
+        {
+          "name": "Cyclic",
+          "description": "Provides seamless deployment for serverless applications with minimal setup.",
+          "url": "https://www.cyclic.sh/"
+        },
+        {
+          "name": "Surge",
+          "description": "A simple tool for publishing static sites to the web quickly.",
+          "url": "https://surge.sh/"
+        },
+        {
+          "name": "Adaptable",
+          "description": "A platform that helps in deploying web applications smoothly and efficiently.",
+          "url": "https://adaptable.io/"
+        }
+      ],
+      "Dynamic Programming": [],
+      "Data Structures": [
+        {
+          "name": "This is CS50x",
+          "description": "David J. Malan",
+          "url": "https://cs50.harvard.edu/x/2021"
+        },
+        {
+          "name": "Intro to Data Structures and Algorithms",
+          "description": "Brynn Claypoole, Horatio Thomas",
+          "url": "https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513"
+        }
+      ],
+      "Deep Learning": [],
+      "Networking": [],
+      "Algorithms": [
+        {
+          "name": "Sorting Algorithms",
+          "description": "mycodeschool",
+          "url": "https://www.youtube.com/playlist?list=PL2\\_aWCzGMAwKedT2KfDMB9YA5DgASZb3U"
+        }
+      ],
+      "Ethical Hacking": [],
+      "Online Learning Platforms": [
+        {
+          "name": "Coursera",
+          "description": "Many courses free to audit",
+          "url": "https://www.coursera.org/"
+        },
+        {
+          "name": "MIT OpenCourseWare",
+          "description": "Free MIT course materials",
+          "url": "https://ocw.mit.edu/"
+        },
+        {
+          "name": "Stanford Online",
+          "description": "Free online courses from Stanford",
+          "url": "https://online.stanford.edu/free-courses"
+        },
+        {
+          "name": "edX",
+          "description": "Free courses from top institutions",
+          "url": "https://www.edx.org/"
+        },
+        {
+          "name": "Khan Academy",
+          "description": "Completely free courses",
+          "url": "https://www.khanacademy.org/"
+        }
+      ]
+    }
+  },
+  "Github Repo's": {
+    "subcategories": {
+      "Data Scraping Tools (Best and Limited)": [
+        {
+          "name": "Scrapy",
+          "description": "A robust, open-source framework for web scraping in Python, widely adopted for its scalability.",
+          "url": "https://github.com/scrapy/scrapy"
+        },
+        {
+          "name": "BeautifulSoup",
+          "description": "A Python library for extracting information from HTML and XML documents efficiently.",
+          "url": "https://github.com/wention/BeautifulSoup4"
+        },
+        {
+          "name": "Playwright",
+          "description": "A modern automation library supporting multiple languages and ideal for scraping dynamic websites.",
+          "url": "https://github.com/microsoft/playwright"
+        },
+        {
+          "name": "Puppeteer",
+          "description": "A Node.js library for controlling headless browsers, widely used for automating and scraping.",
+          "url": "https://github.com/puppeteer/puppeteer"
+        },
+        {
+          "name": "Cheerio",
+          "description": "A lightweight, server-side HTML parser inspired by jQuery, perfect for scraping static content in Node.js.",
+          "url": "https://github.com/cheeriojs/cheerio"
+        }
+      ],
+      "CAPTCHA Bypassing Tools": [
+        {
+          "name": "anticaptcha",
+          "description": "Integrates Anti-Captcha service into Python projects for solving CAPTCHAs.",
+          "url": "https://github.com/ad-m/python-anticaptcha"
+        },
+        {
+          "name": "2Captcha Python",
+          "description": "Official Python SDK to interact with the 2Captcha service for CAPTCHA solving.",
+          "url": "https://github.com/2captcha/2captcha-python"
+        }
+      ],
+      "Penetration Testing Tools": [
+        {
+          "name": "Hacking Tools",
+          "description": "A curated list of hacking tools for various purposes.",
+          "url": "https://github.com/carpedm20/awesome-hacking"
+        },
+        {
+          "name": "Awesome Hacking",
+          "description": "A collection of hacking resources and tutorials for ethical hackers.",
+          "url": "https://github.com/Hack-with-Github/Awesome-Hacking"
+        },
+        {
+          "name": "Payloads All The Things",
+          "description": "A repository of useful payloads for various attacks.",
+          "url": "https://github.com/swisskyrepo/PayloadsAllTheThings"
+        },
+        {
+          "name": "H4cker",
+          "description": "An in-depth resource for ethical hacking and security research.",
+          "url": "https://github.com/The-Art-of-Hacking/h4cker"
+        },
+        {
+          "name": "Hacking Resource",
+          "description": "A comprehensive collection of resources for ethical hacking and cybersecurity.",
+          "url": "https://github.com/vitalysim/Awesome-Hacking-Resources"
+        },
+        {
+          "name": "ToolKit",
+          "description": "The essential toolkit for reversing, malware analysis, and cracking.",
+          "url": "https://github.com/indetectables-net/toolkit"
+        },
+        {
+          "name": "Metasploit Framework",
+          "description": "The most widely used penetration testing framework.",
+          "url": "https://github.com/rapid7/metasploit-framework"
+        },
+        {
+          "name": "Empire",
+          "description": "A post-exploitation and adversary simulation framework.",
+          "url": "https://github.com/BC-SECURITY/Empire"
+        }
+      ],
+      "Password Recovery Tools": [
+        {
+          "name": "Password Cracking",
+          "description": "A versatile password-cracking tool that supports many protocols.",
+          "url": "https://github.com/vanhauser-thc/thc-hydra"
+        },
+        {
+          "name": "John the Ripper",
+          "description": "A powerful password-cracking tool supporting a wide range of formats.",
+          "url": "https://github.com/magnumripper/JohnTheRipper"
+        },
+        {
+          "name": "Hashcat",
+          "description": "The world’s fastest and most advanced password recovery utility.",
+          "url": "https://github.com/hashcat/hashcat"
+        }
+      ],
+      "Cryptography": [
+        {
+          "name": "Cryptography",
+          "description": "A library that provides cryptographic recipes and primitives for Python.",
+          "url": "https://github.com/pyca/cryptography"
+        },
+        {
+          "name": "Libsodium",
+          "description": "A modern, portable, easy-to-use cryptographic library.",
+          "url": "https://github.com/jedisct1/libsodium"
+        },
+        {
+          "name": "Crypto101",
+          "description": "A book about cryptography for programmers of all skill levels.",
+          "url": "https://github.com/crypto101/book"
+        }
+      ],
+      "Malware Research and Analysis": [
+        {
+          "name": "Malware Analysis",
+          "description": "Resources and tools for malware analysis and reverse engineering.",
+          "url": "https://github.com/rshipp/awesome-malware-analysis"
+        },
+        {
+          "name": "Malware Analysis & Reverse Engineering",
+          "description": "Tools and resources for analyzing and reverse-engineering malware.",
+          "url": "https://github.com/CyberSecurityUP/Awesome-Malware-Analysis-Reverse-Engineering"
+        },
+        {
+          "name": "Ghidra",
+          "description": "A software reverse engineering framework developed by the NSA.",
+          "url": "https://github.com/NationalSecurityAgency/ghidra"
+        },
+        {
+          "name": "PE-sieve",
+          "description": "A tool for malware memory analysis and scanning.",
+          "url": "https://github.com/hasherezade/pe-sieve"
+        }
+      ],
+      "Web Application Security": [
+        {
+          "name": "Web Security",
+          "description": "A curated list of resources for web application security.",
+          "url": "https://github.com/qazbnm456/awesome-web-security"
+        },
+        {
+          "name": "BurpSuite For Pentester",
+          "description": "This cheatsheet is built for the Bug Bounty Hunters and penetration testers.",
+          "url": "https://github.com/Ignitetechnologies/BurpSuite-For-Pentester"
+        },
+        {
+          "name": "XSStrike",
+          "description": "Most advanced XSS scanner.",
+          "url": "https://github.com/s0md3v/XSStrike"
+        },
+        {
+          "name": "Vulnerability Scanning",
+          "description": "An automated tool for detecting and exploiting SQL injection vulnerabilities.",
+          "url": "https://github.com/sqlmapproject/sqlmap"
+        },
+        {
+          "name": "Burpsuite Extensions",
+          "description": "A collection of useful extensions for Burp Suite.",
+          "url": "https://github.com/snoopysecurity/awesome-burp-extensions"
+        },
+        {
+          "name": "Web Hacking",
+          "description": "A curated list of resources for hacking web applications.",
+          "url": "https://github.com/infoslack/awesome-web-hacking"
+        },
+        {
+          "name": "OWASP ZAP",
+          "description": "The OWASP Zed Attack Proxy for identifying vulnerabilities in web applications.",
+          "url": "https://github.com/zaproxy/zaproxy"
+        },
+        {
+          "name": "Nikto",
+          "description": "A web server scanner that identifies vulnerabilities and outdated software.",
+          "url": "https://github.com/sullo/nikto"
+        }
+      ],
+      "Bug Hunting Resources": [
+        {
+          "name": "Awesome Bug Bounty",
+          "description": "A comprehensive curated list of available Bug Bounty & Disclosure Programs and Write-ups.",
+          "url": "https://github.com/djadmin/awesome-bug-bounty"
+        },
+        {
+          "name": "Resources-for-Beginner-Bug-Bounty-Hunters",
+          "description": "A list of resources for those interested in getting started in bug bounties.",
+          "url": "https://github.com/nahamsec/Resources-for-Beginner-Bug-Bounty-Hunters"
+        },
+        {
+          "name": "Bug Bounty Beginner Roadmap",
+          "description": "This is a resource factory for anyone looking forward to starting bug hunting and would require guidance as a beginner.",
+          "url": "https://github.com/bittentech/Bug-Bounty-Beginner-Roadmap"
+        },
+        {
+          "name": "Bug Bounty Tools",
+          "description": "A comprehensive collection of tools and resources for bug bounty hunters.",
+          "url": "https://github.com/KathanP19/HowToHunt"
+        },
+        {
+          "name": "BBTools",
+          "description": "A collection of tools useful for bug bounty hunting.",
+          "url": "https://github.com/jhaddix/BBTools"
+        },
+        {
+          "name": "BBHT",
+          "description": "Bug Bounty Hunting Tools for scanning, recon, and exploitation.",
+          "url": "https://github.com/nahamsec/bbht"
+        },
+        {
+          "name": "Nuclei",
+          "description": "A fast vulnerability scanner for customizable templates.",
+          "url": "https://github.com/projectdiscovery/nuclei"
+        },
+        {
+          "name": "Fuzzing101",
+          "description": "A guide and resources for learning fuzzing techniques for bug hunting.",
+          "url": "https://github.com/google/fuzzing"
+        },
+        {
+          "name": "Bugcrowd LevelUp",
+          "description": "A curated repository for improving skills in bug bounty hunting.",
+          "url": "https://github.com/bugcrowd/levelup"
+        },
+        {
+          "name": "Wordlists",
+          "description": "Wordlists for brute force, fuzzing, and more for bug bounty programs.",
+          "url": "https://github.com/danielmiessler/SecLists"
+        },
+        {
+          "name": "ReconFTW",
+          "description": "Fully automated recon tool designed for bug hunting and pentesting.",
+          "url": "https://github.com/six2dez/reconftw"
+        }
+      ],
+      "General Cybersecurity Tools": [
+        {
+          "name": "Cybersecurity Handbooks",
+          "description": "A huge chunk of my personal notes since I started playing CTFs and working as a Red Teamer.",
+          "url": "https://github.com/0xsyr0/Awesome-Cybersecurity-Handbooks"
+        },
+        {
+          "name": "Sec_Mind_Maps",
+          "description": "cyber security mind maps collection.",
+          "url": "https://github.com/h0tak88r/Sec_Mind_Maps"
+        },
+        {
+          "name": "Incident Response",
+          "description": "A resource for incident response strategies and frameworks.",
+          "url": "https://github.com/Correia-jpv/fucking-awesome-incident-response"
+        },
+        {
+          "name": "Security",
+          "description": "A comprehensive list of security resources.",
+          "url": "https://github.com/sbilly/awesome-security"
+        },
+        {
+          "name": "PwnKit",
+          "description": "A toolkit for privilege escalation.",
+          "url": "https://github.com/ly4k/PwnKit"
+        },
+        {
+          "name": "CTF Challenge Collections",
+          "description": "A curated list of CTF frameworks, challenges, and write-ups.",
+          "url": "https://github.com/apsdehal/awesome-ctf"
+        }
+      ],
+      "Vulnerability Exploitation Tools": [
+        {
+          "name": "Exploit Development",
+          "description": "A collection of resources useful for exploit development.",
+          "url": "https://github.com/wtsxDev/Exploit-Development"
+        },
+        {
+          "name": "routersploit",
+          "description": "An exploit framework for embedded devices.",
+          "url": "https://github.com/threat9/routersploit"
+        },
+        {
+          "name": "pwntools",
+          "description": "A CTF framework and exploit development library.",
+          "url": "https://github.com/Gallopsled/pwntools"
+        },
+        {
+          "name": "ROPgadget",
+          "description": "A tool to facilitate Return-Oriented Programming exploit development.",
+          "url": "https://github.com/JonathanSalwan/ROPgadget"
+        }
+      ],
+      "Firewall Configuration Tools": [
+        {
+          "name": "Firewall Cfg",
+          "description": "Essential resources and examples for configuring iptables.",
+          "url": "https://github.com/trimstray/iptables-essentials"
+        },
+        {
+          "name": "UFW",
+          "description": "Utilities and examples for configuring uncomplicated firewalls for Docker.",
+          "url": "https://github.com/ChaoticWeg/ufw-docker"
+        },
+        {
+          "name": "ufw-docker",
+          "description": "Manages `ufw` rules for Docker containers to enhance firewall configurations.",
+          "url": "https://github.com/chaifeng/ufw-docker"
+        },
+        {
+          "name": "Firewalld",
+          "description": "Resources and guides for using `firewalld` effectively.",
+          "url": "https://github.com/ntd/firewalld"
+        },
+        {
+          "name": "CrowdSec",
+          "description": "Collaborative and behavior-driven intrusion prevention system for managing firewall rules.",
+          "url": "https://github.com/crowdsecurity/crowdsec"
+        },
+        {
+          "name": "ferm",
+          "description": "A tool to maintain complex firewall rules in an easy and readable manner.",
+          "url": "https://github.com/MaxKellermann/ferm"
+        }
+      ],
+      "Digital Forensics Tools": [
+        {
+          "name": "Computer Forensic",
+          "description": "A compilation of resources and tools related to digital forensics.",
+          "url": "https://github.com/cugu/awesome-forensics"
+        },
+        {
+          "name": "Forensics",
+          "description": "Another collection of forensics tools and methodologies.",
+          "url": "https://github.com/cugu/awesome-forensics"
+        },
+        {
+          "name": "Memory Forensics",
+          "description": "Tools and methodologies for analyzing memory dumps in digital forensics.",
+          "url": "https://github.com/digitalisx/awesome-memory-forensics"
+        },
+        {
+          "name": "Volatility",
+          "description": "An advanced memory forensics framework.",
+          "url": "https://github.com/volatilityfoundation/volatility"
+        },
+        {
+          "name": "Autopsy",
+          "description": "A digital forensics platform and graphical interface for The Sleuth Kit.",
+          "url": "https://github.com/sleuthkit/autopsy"
+        }
+      ],
+      "Open Source Intelligence (OSINT)": [
+        {
+          "name": "OSINT",
+          "description": "A collection of resources and tools for open-source intelligence gathering.",
+          "url": "https://github.com/jivoi/awesome-osint"
+        },
+        {
+          "name": "OSINT Bots",
+          "description": "A collection of bots for gathering open-source intelligence.",
+          "url": "https://github.com/ItIsMeCall911/Awesome-Telegram-OSINT#-bots"
+        },
+        {
+          "name": "Search Engines",
+          "description": "A collection of hacker-focused search engines and tools.",
+          "url": "https://github.com/edoardottt/awesome-hacker-search-engines"
+        },
+        {
+          "name": "Recon-ng",
+          "description": "A reconnaissance tool for gathering OSINT.",
+          "url": "https://github.com/lanmaster53/recon-ng"
+        },
+        {
+          "name": "SpiderFoot",
+          "description": "An automated OSINT and threat intelligence tool.",
+          "url": "https://github.com/smicallef/spiderfoot"
+        }
+      ],
+      "Security in DevOps": [
+        {
+          "name": "DevSecOps",
+          "description": "A repository of DevSecOps resources and practices.",
+          "url": "https://github.com/devsecops/awesome-devsecop"
+        },
+        {
+          "name": "Checkov",
+          "description": "A static analysis tool for securing cloud infrastructure code.",
+          "url": "https://github.com/bridgecrewio/checkov"
+        },
+        {
+          "name": "Trivy",
+          "description": "A vulnerability scanner for container images, file systems, and Git repositories.",
+          "url": "https://github.com/aquasecurity/trivy"
+        }
+      ],
+      "Web Development Resources": [
+        {
+          "name": "Full Stack Web Developer",
+          "description": "Free resources for learning Full Stack Web Development.",
+          "url": "https://github.com/bmorelli25/Become-A-Full-Stack-Web-Developer"
+        },
+        {
+          "name": "Web-Development",
+          "description": "web development mini projects which are made up of HTML, CSS & little bit of JavaScript.",
+          "url": "https://github.com/keshavgbpecdelhi/Web-Development"
+        },
+        {
+          "name": "FreeCodeCamp",
+          "description": "A free platform for learning web development and coding.",
+          "url": "https://github.com/freeCodeCamp/freeCodeCamp"
+        },
+        {
+          "name": "The Odin Project",
+          "description": "A full-stack web development curriculum.",
+          "url": "https://github.com/TheOdinProject/curriculum"
+        }
+      ],
+      "Cloud Security Frameworks": [
+        {
+          "name": "Cloud Pentest",
+          "description": "Resources and tools for cloud penetration testing.",
+          "url": "https://github.com/CyberSecurityUP/Awesome-Cloud-PenTest"
+        },
+        {
+          "name": "AWS Security",
+          "description": "A curated list of AWS security resources and best practices.",
+          "url": "https://github.com/jassics/awesome-aws-security"
+        },
+        {
+          "name": "Cloud Security",
+          "description": "Resources focused on securing cloud environments and applications.",
+          "url": "https://github.com/4ndersonLin/awesome-cloud-security"
+        },
+        {
+          "name": "kube-bench",
+          "description": "A Kubernetes security compliance tool.",
+          "url": "https://github.com/aquasecurity/kube-bench"
+        },
+        {
+          "name": "ScoutSuite",
+          "description": "A multi-cloud security auditing tool.",
+          "url": "https://github.com/nccgroup/ScoutSuite"
+        }
+      ],
+      "Binary and Reverse Engineering Tools": [
+        {
+          "name": "Reverse Engineering",
+          "description": "A collection of resources for software reverse engineering.",
+          "url": "https://github.com/tylerha97/awesome-reversing"
+        },
+        {
+          "name": "Reverse-Engineering",
+          "description": "A FREE comprehensive reverse engineering tutorial covering x86, x64, 32-bit/64-bit ARM and embedded RISC-V architectures.",
+          "url": "https://github.com/mytechnotalent/Reverse-Engineering"
+        },
+        {
+          "name": "Radare2",
+          "description": "An open-source framework for reverse engineering and binary analysis.",
+          "url": "https://github.com/radareorg/radare2"
+        },
+        {
+          "name": "Capstone",
+          "description": "A lightweight and fast multi-architecture disassembly framework.",
+          "url": "https://github.com/capstone-engine/capstone"
+        }
+      ],
+      "Threat Intelligence Platforms": [
+        {
+          "name": "Threat Intelligence",
+          "description": "Tools and resources for gathering and analyzing threat intelligence.",
+          "url": "https://github.com/hslatman/awesome-threat-intelligence"
+        },
+        {
+          "name": "MISP",
+          "description": "An open-source threat intelligence platform for sharing and analyzing threat data.",
+          "url": "https://github.com/MISP/MISP"
+        },
+        {
+          "name": "Yeti",
+          "description": "A platform for organizing and sharing threat intelligence.",
+          "url": "https://github.com/yeti-platform/yeti"
+        }
+      ],
+      "Blockchain and Smart Contract Security": [
+        {
+          "name": "Smart Contract Security",
+          "description": "Resources for securing smart contract applications.",
+          "url": "https://github.com/saeidshirazi/Awesome-Smart-Contract-Security"
+        },
+        {
+          "name": "Mythril",
+          "description": "A security analysis tool for Ethereum smart contracts.",
+          "url": "https://github.com/ConsenSys/mythril"
+        },
+        {
+          "name": "Slither",
+          "description": "A static analysis framework to detect vulnerabilities in Solidity code.",
+          "url": "https://github.com/crytic/slither"
+        },
+        {
+          "name": "Echidna",
+          "description": "A fuzzing tool for Ethereum smart contracts to test their properties.",
+          "url": "https://github.com/crytic/echidna"
+        },
+        {
+          "name": "Smart Contract Audit Checklist",
+          "description": "Best practices and audit guidelines for secure smart contract development.",
+          "url": "https://github.com/ConsenSys/smart-contract-best-practices"
+        },
+        {
+          "name": "Foundry",
+          "description": "A blazing-fast Ethereum development toolkit for advanced testing and security practices.",
+          "url": "https://github.com/foundry-rs/foundry"
+        },
+        {
+          "name": "Securify",
+          "description": "An automated security scanner for Ethereum smart contracts.",
+          "url": "https://github.com/eth-sri/securify"
+        },
+        {
+          "name": "Awesome Blockchain Security",
+          "description": "A curated list of blockchain security resources.",
+          "url": "https://github.com/RustSec/awesome-blockchain-security"
+        }
+      ],
+      "DevOps Automation": [
+        {
+          "name": "DevOps-Roadmap",
+          "description": "DevOps Roadmap for 2024. with learning resources.",
+          "url": "https://github.com/milanm/DevOps-Roadmap"
+        },
+        {
+          "name": "Ansible",
+          "description": "A simple IT automation platform.",
+          "url": "https://github.com/ansible/ansible"
+        },
+        {
+          "name": "Docker",
+          "description": "Everything you need to build, ship, and run containerized applications.",
+          "url": "https://github.com/docker/docker-ce"
+        }
+      ],
+      "Shodan Tools": [
+        {
+          "name": "Shodan",
+          "description": "A collection of useful Shodan queries",
+          "url": "https://github.com/jakejarvis/awesome-shodan-queries"
+        },
+        {
+          "name": "Shodan Python",
+          "description": "Python library for interacting with Shodan’s API.",
+          "url": "https://github.com/shodan/python-shodan"
+        }
+      ],
+      "API Vulnerability Scanners": [
+        {
+          "name": "API Security",
+          "description": "Best practices and tools for securing APIs.",
+          "url": "https://github.com/arainho/awesome-api-security"
+        },
+        {
+          "name": "42Crunch API Security",
+          "description": "A list of API security tools and best practices.",
+          "url": "https://github.com/42Crunch/awesome-api-security"
+        }
+      ],
+      "Web3 and Blockchain Tools": [
+        {
+          "name": "WEB3",
+          "description": "Security practices and resources for web3 development.",
+          "url": "https://github.com/Anugrahsr/Awesome-web3-Security"
+        },
+        {
+          "name": "WEB3 Security",
+          "description": "Another collection of resources for web3 security practices.",
+          "url": "https://github.com/Anugrahsr/Awesome-web3-Security"
+        },
+        {
+          "name": "Ether.js",
+          "description": "A complete library for interacting with the Ethereum blockchain.",
+          "url": "https://github.com/ethers-io/ethers.js"
+        },
+        {
+          "name": "OpenZeppelin",
+          "description": "Secure smart contract development framework.",
+          "url": "https://github.com/OpenZeppelin/openzeppelin-contracts"
+        }
+      ],
+      "Infrastructure as Code (Terraform)": [
+        {
+          "name": "Terraform",
+          "description": "Tools and resources for using Terraform effectively.",
+          "url": "https://github.com/shuaibiyy/awesome-terraform"
+        },
+        {
+          "name": "Terrascan",
+          "description": "A static code analyzer for Terraform to detect compliance and security violations.",
+          "url": "https://github.com/accurics/terrascan"
+        }
+      ],
+      "IoT Security": [
+        {
+          "name": "IOT",
+          "description": "A list of resources related to the Internet of Things.",
+          "url": "https://github.com/phodal/awesome-iot/blob/master/README.md"
+        },
+        {
+          "name": "Embedded & IOT Security",
+          "description": "Security practices for embedded systems and IoT devices.",
+          "url": "https://github.com/fkie-cad/awesome-embedded-and-iot-security"
+        },
+        {
+          "name": "IOT Hacks",
+          "description": "Resources and examples of hacks targeting IoT devices.",
+          "url": "https://github.com/nebgnahz/awesome-iot-hacks"
+        },
+        {
+          "name": "Tasmota",
+          "description": "An open-source firmware for IoT devices.",
+          "url": "https://github.com/arendst/Tasmota"
+        }
+      ],
+      "iOS Security and Penetration Testing": [
+        {
+          "name": "IOS Security",
+          "description": "Resources and tools focused on security for iOS applications.",
+          "url": "https://github.com/Cy-clon3/awesome-ios-security"
+        },
+        {
+          "name": "Frida",
+          "description": "A dynamic instrumentation toolkit for security researchers.",
+          "url": "https://github.com/frida/frida"
+        }
+      ],
+      "Piracy": [
+        {
+          "name": "Piracy",
+          "description": "A collection of resources and tools related to piracy and digital rights.",
+          "url": "https://github.com/Igglybuff/awesome-piracy"
+        },
+        {
+          "name": "Jellyfin",
+          "description": "An open-source media server.",
+          "url": "https://github.com/jellyfin/jellyfin"
+        },
+        {
+          "name": "Awesome Piracy",
+          "description": "A comprehensive list of tools and resources for bypassing digital content restrictions.",
+          "url": "https://github.com/Igglybuff/awesome-piracy"
+        },
+        {
+          "name": "Stremio Addons",
+          "description": "A collection of Stremio addons for streaming movies and TV shows.",
+          "url": "https://github.com/Stremio/stremio-addons-list"
+        },
+        {
+          "name": "LibGen",
+          "description": "A desktop application for accessing Library Genesis content.",
+          "url": "https://github.com/libgenapps/LibgenDesktop"
+        },
+        {
+          "name": "rclone",
+          "description": "A powerful command-line program to manage files on cloud storage and local systems.",
+          "url": "https://github.com/rclone/rclone"
+        },
+        {
+          "name": "Streamlink",
+          "description": "Extracts streams from various services and pipes them into video players.",
+          "url": "https://github.com/streamlink/streamlink"
+        }
+      ],
+      "OSCP Preparation Resources": [
+        {
+          "name": "OSCP",
+          "description": "A collection of resources to help prepare for the Offensive Security Certified Professional exam.",
+          "url": "https://github.com/0x4D31/awesome-oscp"
+        },
+        {
+          "name": "OSCP Preparation",
+          "description": "A curated list of resources for preparing for the OSCP exam.",
+          "url": "https://github.com/NullByteTeam/OSCP-Prep"
+        }
+      ],
+      "Remote Administration Tools (RAT)": [
+        {
+          "name": "RAT",
+          "description": "Resources related to Remote Access Trojans (RAT) implementations and usage.",
+          "url": "https://github.com/alphaSeclab/awesome-rat"
+        },
+        {
+          "name": "QuasarRAT",
+          "description": "A lightweight remote administration tool for Windows.",
+          "url": "https://github.com/quasar/Quasar"
+        }
+      ],
+      "Programming Resources": [
+        {
+          "name": "Build your own x",
+          "description": "Master programming by recreating your favorite technologies from scratch.",
+          "url": "https://github.com/codecrafters-io/build-your-own-x"
+        },
+        {
+          "name": "Project Based Learning",
+          "description": "A collection of project-based tutorials for learning concepts (Programing).",
+          "url": "https://github.com/practical-tutorials/project-based-learning"
+        },
+        {
+          "name": "coding-resources",
+          "description": "A collection of resources for most of programing roadmaps.",
+          "url": "https://github.com/nishant-Tiwari24/coding-resources"
+        },
+        {
+          "name": "Eloquent JavaScript",
+          "description": "A JavaScript programming book with interactive examples.",
+          "url": "https://github.com/marijnh/Eloquent-JavaScript"
+        }
+      ],
+      "Public Vulnerability Resources": [
+        {
+          "name": "vulnerability Checklist",
+          "description": "This repository contain a lot of web and api vulnerability checklists.",
+          "url": "https://github.com/Az0x7/vulnerability-Checklist"
+        },
+        {
+          "name": "VulnResearch",
+          "description": "A curated list of public exploit resources for vulnerabilities.",
+          "url": "https://github.com/RedSiege/VulnResearch"
+        }
+      ],
+      "API Key Testing Tools": [
+        {
+          "name": "keyhacks",
+          "description": "Keyhacks is a repository which shows quick ways in which API keys leaked by a bug bounty program can be checked to see if they're valid.",
+          "url": "https://github.com/streaak/keyhacks"
+        },
+        {
+          "name": "ApiKeyLeak",
+          "description": "A list of public services and methods to test leaked API keys.",
+          "url": "https://github.com/daffainfo/ApiKeyLeaks"
+        },
+        {
+          "name": "Public APIs",
+          "description": "A massive directory of free APIs across various domains like finance, games, and data.",
+          "url": "https://github.com/public-apis/public-apis"
+        },
+        {
+          "name": "API Tracker",
+          "description": "A CLI tool to track, debug, and monitor API keys in codebases.",
+          "url": "https://github.com/apitracker/apitracker"
+        },
+        {
+          "name": "Secrets Scanner",
+          "description": "Detect and prevent API key leaks in repositories.",
+          "url": "https://github.com/humanmade/secrets-scanner"
+        },
+        {
+          "name": "Swagger APIs List",
+          "description": "A collection of APIs with Swagger specifications for testing and development.",
+          "url": "https://github.com/APIs-guru/openapi-directory"
+        },
+        {
+          "name": "Free API Docs",
+          "description": "A curated collection of free APIs with detailed documentation.",
+          "url": "https://github.com/Kikobeats/free-api-docs"
+        }
+      ],
+      "Red Team Operations": [
+        {
+          "name": "Red Team Ops",
+          "description": "A collection of resources and tools used by red teams.",
+          "url": "https://github.com/CyberSecurityUP/Awesome-Red-Team-Operations"
+        },
+        {
+          "name": "Red Teaming",
+          "description": "Resources related to pentesting and red team operations.",
+          "url": "https://github.com/yeyintminthuhtut/Awesome-Red-Teaming"
+        },
+        {
+          "name": "Red Team ToolKit",
+          "description": "A curated toolkit for red teaming operations.",
+          "url": "https://0x1.gitlab.io/pentesting/Red-Teaming-Toolkit/"
+        },
+        {
+          "name": "Cobalt Strike Resources",
+          "description": "A list of Cobalt Strike resources for red team operations.",
+          "url": "https://github.com/zer0yu/Awesome-CobaltStrike"
+        },
+        {
+          "name": "Empire",
+          "description": "A post-exploitation framework for Red Team operations.",
+          "url": "https://github.com/BC-SECURITY/Empire"
+        },
+        {
+          "name": "Covenant",
+          "description": "A collaborative .NET command and control framework for Red Teaming.",
+          "url": "https://github.com/cobbr/Covenant"
+        },
+        {
+          "name": "Mitre ATT&CK Navigator",
+          "description": "A visualization tool for the MITRE ATT&CK framework used in Red Team planning.",
+          "url": "https://github.com/mitre-attack/attack-navigator"
+        },
+        {
+          "name": "PoshC2",
+          "description": "A C2 framework for managing post-exploitation operations.",
+          "url": "https://github.com/nettitude/PoshC2"
+        },
+        {
+          "name": "Red Team Automation (RTA)",
+          "description": "Automated adversary simulation scripts for Red Teaming.",
+          "url": "https://github.com/endgameinc/RTA"
+        },
+        {
+          "name": "Caldera",
+          "description": "An automated adversary emulation system designed for Red Teams.",
+          "url": "https://github.com/mitre/caldera"
+        },
+        {
+          "name": "Merlin",
+          "description": "A cross-platform post-exploitation framework for command and control.",
+          "url": "https://github.com/Ne0nd0g/merlin"
+        }
+      ],
+      "Defensive Security Tools (Blue Team)": [
+        {
+          "name": "Blue Team Ops",
+          "description": "Resources and tools for blue team cybersecurity operations.",
+          "url": "https://github.com/fabacab/awesome-cybersecurity-blueteam"
+        },
+        {
+          "name": "Sigma Rules",
+          "description": "A generic signature format for SIEM systems, used by blue teams.",
+          "url": "https://github.com/SigmaHQ/sigma"
+        },
+        {
+          "name": "TheHive Project",
+          "description": "A scalable and free Security Incident Response Platform (SIRP).",
+          "url": "https://github.com/TheHive-Project/TheHive"
+        },
+        {
+          "name": "GRR Rapid Response",
+          "description": "An incident response framework for large-scale investigations.",
+          "url": "https://github.com/google/grr"
+        },
+        {
+          "name": "OpenBlue",
+          "description": "A curated list of Blue Teaming tools and resources.",
+          "url": "https://github.com/TheDevSecGuy/OpenBlue"
+        },
+        {
+          "name": "Velociraptor",
+          "description": "A powerful open-source endpoint visibility and response tool.",
+          "url": "https://github.com/Velocidex/velociraptor"
+        },
+        {
+          "name": "OSQuery",
+          "description": "A SQL-powered tool for querying endpoint data.",
+          "url": "https://github.com/osquery/osquery"
+        },
+        {
+          "name": "Sysmon Config",
+          "description": "Config files for enhancing Windows Sysmon for Blue Teaming.",
+          "url": "https://github.com/SwiftOnSecurity/sysmon-config"
+        }
+      ],
+      "Android Customization Tools": [
+        {
+          "name": "Android Modding",
+          "description": "A large collection of github repositories related to android modding.",
+          "url": "https://github.com/jbro129/android-modding"
+        },
+        {
+          "name": "Magisk",
+          "description": "A complete solution for rooting Android devices without altering system partitions.",
+          "url": "https://github.com/topjohnwu/Magisk"
+        },
+        {
+          "name": "Smali2Java",
+          "description": "A tool for reverse engineering Android apps by converting `.smali` code to Java.",
+          "url": "https://github.com/MrCuriosity01/Smali2Java"
+        },
+        {
+          "name": "Frida",
+          "description": "A dynamic instrumentation toolkit for developers and reverse engineers.",
+          "url": "https://github.com/frida/frida"
+        },
+        {
+          "name": "APKTool",
+          "description": "A tool for reverse engineering APK files.",
+          "url": "https://github.com/iBotPeaches/Apktool"
+        },
+        {
+          "name": "EdXposed",
+          "description": "A framework for modifying Android runtime without altering system partitions.",
+          "url": "https://github.com/ElderDrivers/EdXposed"
+        }
+      ],
+      "Advanced Pentesting Resources": [
+        {
+          "name": "Pentest",
+          "description": "A comprehensive list of resources for penetration testing.",
+          "url": "https://github.com/enaqx/awesome-pentest"
+        },
+        {
+          "name": "Kerberos Exploitation",
+          "description": "Tools and resources for exploiting Kerberos.",
+          "url": "https://github.com/SweetBabyDave/Awesome-Kerberos-Exploitation"
+        }
+      ],
+      "Social Engineering Frameworks": [
+        {
+          "name": "Social Engineering",
+          "description": "Resources related to the science of manipulating people in security contexts.",
+          "url": "https://github.com/v2-dev/awesome-social-engineering"
+        },
+        {
+          "name": "SET",
+          "description": "The Social-Engineer Toolkit, a framework for social engineering attacks.",
+          "url": "https://github.com/trustedsec/social-engineer-toolkit"
+        }
+      ],
+      "SOC Operations and Toolkits": [
+        {
+          "name": "SOC",
+          "description": "A list of tools and resources for Security Operations Centers.",
+          "url": "https://github.com/cyb3rxp/awesome-soc"
+        },
+        {
+          "name": "SOCCRATES",
+          "description": "SOC toolkits and resources for building security operations centers.",
+          "url": "https://github.com/NextronSystems/soccrates"
+        }
+      ]
+    }
+  },
+  "Piracy": {
+    "subcategories": {
+      "Torrents": [
+        {
+          "name": "Torrentz2",
+          "description": "A popular torrent search engine.",
+          "url": "https://torrentz2.nz/"
+        },
+        {
+          "name": "Torrent Downloads",
+          "description": "Comprehensive directory of available torrents.",
+          "url": "https://www.torrentdownloads.pro/"
+        },
+        {
+          "name": "YTS",
+          "description": "A torrent site specializing in high-quality movie releases.",
+          "url": "https://yts.mx/"
+        },
+        {
+          "name": "1337x",
+          "description": "A well-known torrent site with a broad selection of content.",
+          "url": "https://www.1337x.tw/"
+        },
+        {
+          "name": "RARBG",
+          "description": "Offers verified torrents and a large directory.",
+          "url": "https://rarbg.to/torrents.php?category%5B%5D=54"
+        },
+        {
+          "name": "Lime Torrents",
+          "description": "A user-friendly torrent site offering various types of content.",
+          "url": "https://ww3.limetorrents.cyou/"
+        },
+        {
+          "name": "The Pirate Bay",
+          "description": "One of the most iconic torrent sites with a vast library.",
+          "url": "https://thepiratebay.org/"
+        },
+        {
+          "name": "Katcr",
+          "description": "A community-focused torrent site providing access to a wide range of content.",
+          "url": "https://katcr.to/"
+        },
+        {
+          "name": "Kick Ass Torrent",
+          "description": "A legacy torrent site that offers various downloads.",
+          "url": "https://thekickasstorrents.to/"
+        },
+        {
+          "name": "Torrent Galaxy",
+          "description": "A growing torrent platform with an active user community.",
+          "url": "https://torrentgalaxy.cyou/"
+        },
+        {
+          "name": "ETTV",
+          "description": "Specializes in high-quality TV show torrents.",
+          "url": "https://www.ettv.to/"
+        },
+        {
+          "name": "Zooqle",
+          "description": "Known for offering torrents with verified content, including TV series and movies.",
+          "url": "https://zooqle.com/"
+        },
+        {
+          "name": "TorLock",
+          "description": "A no-fake torrent site featuring a variety of content.",
+          "url": "https://www.torlock.com/"
+        }
+      ],
+      "Modded Apps and Games": [
+        {
+          "name": "LiteApks",
+          "description": "A platform for downloading Android apps and games.",
+          "url": "https://liteapks.com/"
+        },
+        {
+          "name": "Filecr",
+          "description": "A repository for software downloads, including cracked versions.",
+          "url": "https://filecr.com/en"
+        },
+        {
+          "name": "ApkDone",
+          "description": "A site for accessing a wide array of APK files.",
+          "url": "https://apkdone.com/"
+        },
+        {
+          "name": "Apk Mody",
+          "description": "Provides modified versions of Android applications and games.",
+          "url": "https://apkmody.io/"
+        },
+        {
+          "name": "AN1",
+          "description": "A source for downloadable APK files for Android devices.",
+          "url": "https://an1.com/"
+        },
+        {
+          "name": "ModYolo",
+          "description": "A website for obtaining modded versions of popular apps.",
+          "url": "https://modyolo.com/"
+        },
+        {
+          "name": "HappyMod",
+          "description": "A platform featuring various modified APKs shared by users.",
+          "url": "https://happymod.com/"
+        },
+        {
+          "name": "5Play",
+          "description": "Offers both APK and OBB files for app installations.",
+          "url": "https://5play.ru/en/"
+        },
+        {
+          "name": "ModDroid",
+          "description": "A site dedicated to modified APKs for Android applications.",
+          "url": "https://moddroid.com/"
+        },
+        {
+          "name": "RevDL",
+          "description": "Features free modded Android games and apps.",
+          "url": "https://www.revdl.com/"
+        },
+        {
+          "name": "APKPure",
+          "description": "Alternative app store for Android APK downloads.",
+          "url": "https://apkpure.com/"
+        },
+        {
+          "name": "APKHome",
+          "description": "A directory for modded APKs and premium applications.",
+          "url": "https://apkhome.net/"
+        }
+      ],
+      "Pirated PC Games": [
+        {
+          "name": "Fitgirl Repack",
+          "description": "A site offering compressed game repacks that save space while keeping high quality.",
+          "url": "https://fitgirl-repacks.site/"
+        },
+        {
+          "name": "SteamUnlocked",
+          "description": "Provides free unlocked versions of popular Steam games for download.",
+          "url": "https://steamunlocked.net/"
+        },
+        {
+          "name": "Ocean of Games",
+          "description": "A source for downloading various PC games, often including repacks.",
+          "url": "http://oceanofgames.com/"
+        },
+        {
+          "name": "DoDi Repacks",
+          "description": "Offers high-quality repackaged games, making them easier to download and install.",
+          "url": "https://dodi-repacks.site/"
+        },
+        {
+          "name": "Skidrow Reloaded",
+          "description": "A well-known site for downloading cracked games and gaming content.",
+          "url": "https://www.skidrowreloaded.com/"
+        },
+        {
+          "name": "CPY Skidrow",
+          "description": "Provides access to games cracked by the CPY group, known for high-quality releases.",
+          "url": "https://cpyskidrow.com/"
+        },
+        {
+          "name": "Skidrow CPY",
+          "description": "Another source for cracked games and updates from the Skidrow CPY team.",
+          "url": "https://skidrowcpy.games/"
+        },
+        {
+          "name": "Igruha Torrent",
+          "description": "A torrent site dedicated to video games and gaming-related content.",
+          "url": "https://itorrents-igruha.org/"
+        },
+        {
+          "name": "The PCGames",
+          "description": "A site for downloading repacked games with fewer restrictions.",
+          "url": "https://thepcgames.net/"
+        },
+        {
+          "name": "Reloaded Games",
+          "description": "Another platform offering cracked PC games and updates.",
+          "url": "https://reloadedskidrowgames.com/"
+        },
+        {
+          "name": "RG Mechanics",
+          "description": "Focuses on compressed game repacks with high-quality graphics.",
+          "url": "https://rg-mechanics.org/"
+        }
+      ],
+      "Cracked Softwares": [
+        {
+          "name": "FileCR",
+          "description": "A repository for software and applications, including various cracked versions.",
+          "url": "https://filecr.com/en"
+        },
+        {
+          "name": "SoftPedia",
+          "description": "A large software download site with a variety of applications, games, and utilities.",
+          "url": "https://www.softpedia.com/"
+        },
+        {
+          "name": "CNET Download",
+          "description": "A trusted site for downloading a wide range of software applications and tools.",
+          "url": "https://download.cnet.com/"
+        },
+        {
+          "name": "File Hippo",
+          "description": "Offers a variety of software downloads and older versions for Windows applications.",
+          "url": "https://filehippo.com/"
+        },
+        {
+          "name": "AbbasPC",
+          "description": "A platform for downloading computer software, including games and utilities.",
+          "url": "https://abbaspc.net/"
+        },
+        {
+          "name": "Download .io",
+          "description": "A site for finding and downloading a variety of software applications for multiple platforms.",
+          "url": "https://www.download.io/"
+        },
+        {
+          "name": "Crackzoom",
+          "description": "Provides cracked versions of popular software and games for users to download.",
+          "url": "https://crackzoom.com/"
+        },
+        {
+          "name": "GetIntoPC",
+          "description": "Offers free downloads of software, applications, and tools.",
+          "url": "https://getintopc.com/"
+        },
+        {
+          "name": "CracksHash",
+          "description": "Features cracked software and tools for various operating systems.",
+          "url": "https://crackshash.com/"
+        },
+        {
+          "name": "Softasm",
+          "description": "Download premium software with serial keys and patches.",
+          "url": "https://softasm.com/"
+        }
+      ]
+    }
+  },
+  "Awesome Tools": {
+    "subcategories": {
+      "Tools": [],
+      "Code Snippet Tools": [
+        {
+          "name": "Ray.so",
+          "description": "Create beautiful images of your code snippets.",
+          "url": "https://ray.so/"
+        },
+        {
+          "name": "Carbon",
+          "description": "Create and share beautiful images of your source code.",
+          "url": "https://carbon.now.sh/"
+        },
+        {
+          "name": "Codeimg.io",
+          "description": "Convert your code into stylish images for presentations, blogs, and social media.",
+          "url": "https://codeimg.io/"
+        },
+        {
+          "name": "Pasty",
+          "description": "A tool to create aesthetically pleasing images of code snippets.",
+          "url": "https://pasty.app/"
+        },
+        {
+          "name": "Codedotsh",
+          "description": "A simple platform to turn your code into beautiful images with a sleek design.",
+          "url": "https://codedotsh.com/"
+        }
+      ],
+      "Web Development Tools": [
+        {
+          "name": "Tiny helpers",
+          "description": "A collection of free single-purpose online tools for web developers.",
+          "url": "https://tiny-helpers.dev/"
+        },
+        {
+          "name": "Quicktype",
+          "description": "Instantly parse JSON in any language.",
+          "url": "https://app.quicktype.io/"
+        },
+        {
+          "name": "Free CSS",
+          "description": "Free collection of CSS templates and snippets for web projects.",
+          "url": "https://www.free-css.com/"
+        },
+        {
+          "name": "CSS3 Generator",
+          "description": "Generate CSS3 code for borders, gradients, shadows, and more.",
+          "url": "https://css3generator.com/"
+        },
+        {
+          "name": "CSS Grid Generator",
+          "description": "A simple tool to generate CSS grid layout code for responsive design.",
+          "url": "https://cssgrid-generator.netlify.app/"
+        },
+        {
+          "name": "Postman",
+          "description": "A powerful API testing and development tool, ideal for building APIs and testing endpoints.",
+          "url": "https://www.postman.com/"
+        },
+        {
+          "name": "JSFiddle",
+          "description": "A popular tool for writing HTML, CSS, and JavaScript snippets that can be shared and executed live.",
+          "url": "https://jsfiddle.net/"
+        }
+      ],
+      "Design and UI Tools": [
+        {
+          "name": "Squircley",
+          "description": "Start creating beautiful organic shapes ready to use for logos, icons, and background images.",
+          "url": "https://squircley.app/"
+        },
+        {
+          "name": "BrandBird",
+          "description": "An image editor for busy SaaS founders, who build in public!",
+          "url": "https://www.brandbird.app/"
+        },
+        {
+          "name": "Canva",
+          "description": "A simple and intuitive design tool for creating social media posts, presentations, and more.",
+          "url": "https://www.canva.com/"
+        },
+        {
+          "name": "Figma",
+          "description": "A collaborative design tool for UI/UX designs and wireframing.",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "name": "Crello",
+          "description": "A graphic design tool similar to Canva with templates for social media and ads.",
+          "url": "https://crello.com/"
+        },
+        {
+          "name": "Lunacy",
+          "description": "A powerful alternative to Sketch for vector design and prototyping with real-time collaboration.",
+          "url": "https://icons8.com/lunacy"
+        },
+        {
+          "name": "Visme",
+          "description": "A tool for creating beautiful presentations, infographics, and other visual content.",
+          "url": "https://www.visme.co/"
+        }
+      ],
+      "Project and Collaboration Tools": [
+        {
+          "name": "Milanote",
+          "description": "Organize your creative ideas into visual boards.",
+          "url": "https://milanote.com/"
+        },
+        {
+          "name": "Trello",
+          "description": "A visual project management tool that helps teams collaborate and stay organized.",
+          "url": "https://trello.com/"
+        },
+        {
+          "name": "Notion",
+          "description": "All-in-one workspace for notes, tasks, databases, and collaboration.",
+          "url": "https://www.notion.so/"
+        },
+        {
+          "name": "Airtable",
+          "description": "A flexible database tool with spreadsheet functionality, ideal for project management.",
+          "url": "https://airtable.com/"
+        },
+        {
+          "name": "Asana",
+          "description": "A tool to help teams organize, track, and manage work collaboratively.",
+          "url": "https://asana.com/"
+        },
+        {
+          "name": "ClickUp",
+          "description": "A comprehensive project management tool with advanced task-tracking features.",
+          "url": "https://www.clickup.com/"
+        }
+      ],
+      "Markdown Tools": [
+        {
+          "name": "Dillinger",
+          "description": "A cloud-enabled, mobile-ready, offline-storage, AngularJS-powered, HTML5 Markdown editor.",
+          "url": "https://dillinger.io/"
+        },
+        {
+          "name": "Markable",
+          "description": "A simple tool to convert content from web pages to Markdown format.",
+          "url": "https://markable.in/"
+        },
+        {
+          "name": "StackEdit",
+          "description": "A versatile online Markdown editor that supports synchronization with Google Drive and Dropbox.",
+          "url": "https://stackedit.io/"
+        },
+        {
+          "name": "Markdown Table Generator",
+          "description": "Easily create and convert tables to Markdown format.",
+          "url": "https://www.tablesgenerator.com/markdown_tables"
+        }
+      ],
+      "Code Formatters and Linters": [
+        {
+          "name": "Prettier",
+          "description": "An opinionated code formatter that supports many languages and integrates easily with various IDEs.",
+          "url": "https://prettier.io/"
+        },
+        {
+          "name": "ESLint",
+          "description": "A linting utility for identifying and fixing problems in JavaScript code.",
+          "url": "https://eslint.org/"
+        },
+        {
+          "name": "Stylelint",
+          "description": "A mighty, modern CSS linter to avoid errors and enforce consistent style.",
+          "url": "https://stylelint.io/"
+        },
+        {
+          "name": "Tidy HTML5",
+          "description": "A tool for cleaning up HTML code by removing unnecessary attributes and fixing mistakes.",
+          "url": "https://www.html-tidy.org/"
+        }
+      ],
+      "Automation and Testing Tools": [
+        {
+          "name": "Selenium",
+          "description": "A browser automation tool for automating web applications for testing purposes.",
+          "url": "https://www.selenium.dev/"
+        },
+        {
+          "name": "TestCafe",
+          "description": "A JavaScript-based end-to-end testing framework for web applications.",
+          "url": "https://devexpress.github.io/testcafe/"
+        },
+        {
+          "name": "Puppeteer",
+          "description": "A Node.js library that provides a high-level API to control Chrome or Chromium over the DevTools Protocol.",
+          "url": "https://pptr.dev/"
+        },
+        {
+          "name": "Jest",
+          "description": "A JavaScript testing framework, suitable for React and Node.js applications.",
+          "url": "https://jestjs.io/"
+        },
+        {
+          "name": "Cypress",
+          "description": "A powerful testing framework for web applications, focusing on end-to-end testing.",
+          "url": "https://www.cypress.io/"
+        },
+        {
+          "name": "BrowserStack",
+          "description": "A cross-browser testing tool that allows you to test your websites on various browsers and devices.",
+          "url": "https://www.browserstack.com/"
+        }
+      ],
+      "General Development & Design": [
+        {
+          "name": "CodePen",
+          "description": "A popular platform that lets you write HTML, CSS, and JavaScript in an online editor, showcasing live previews. It also includes features like pens (individual projects) and a community to share and explore.",
+          "url": "https://codepen.io/"
+        },
+        {
+          "name": "Glitch",
+          "description": "An all-in-one platform for building and hosting web apps, offering real-time collaboration, easy project deployment, and a simple coding interface.",
+          "url": "https://glitch.com/"
+        },
+        {
+          "name": "Repl.it",
+          "description": "A collaborative online IDE supporting over 50 languages, including Node.js, Python, and more. Repl.it lets you build apps and websites directly from your browser with ease.",
+          "url": "https://replit.com/"
+        },
+        {
+          "name": "Figma",
+          "description": "While it's primarily a design tool, Figma also has features like prototyping, code generation, real-time collaboration, and design systems that make it a complete solution for teams.",
+          "url": "https://www.figma.com/"
+        },
+        {
+          "name": "Visual Studio Code",
+          "description": "A powerful code editor that includes a variety of extensions for web development, version control, debugging, and more. It's an IDE-like tool in itself with integrated terminals and Git support.",
+          "url": "https://code.visualstudio.com/"
+        }
+      ],
+      "Code Collaboration & Documentation": [
+        {
+          "name": "GitHub",
+          "description": "GitHub is not just for hosting repositories but offers collaboration tools like project boards, discussions, actions (CI/CD pipelines), and GitHub Pages for deploying static sites.",
+          "url": "https://github.com/"
+        },
+        {
+          "name": "GitLab",
+          "description": "Like GitHub, GitLab offers repository hosting with integrated CI/CD pipelines, issue tracking, and project management features, supporting full software development workflows.",
+          "url": "https://about.gitlab.com/"
+        },
+        {
+          "name": "Notion",
+          "description": "A versatile tool that blends note-taking, knowledge management, project management, and database management in one app. It also offers templates for various use cases.",
+          "url": "https://www.notion.so/"
+        },
+        {
+          "name": "Trello",
+          "description": "A visual tool for project management that can integrate with other services like Slack, GitHub, and Google Drive to manage tasks, workflow, and progress.",
+          "url": "https://trello.com/"
+        },
+        {
+          "name": "Confluence",
+          "description": "A collaboration tool that combines documentation, project management, and team collaboration in one space.",
+          "url": "https://www.atlassian.com/software/confluence"
+        }
+      ],
+      "Cloud & Hosting Services": [
+        {
+          "name": "Netlify",
+          "description": "A platform for deploying and hosting static sites with continuous integration, instant rollbacks, form handling, and serverless functions all in one.",
+          "url": "https://www.netlify.com/"
+        },
+        {
+          "name": "Vercel",
+          "description": "A platform for deploying front-end applications with serverless functions, offering real-time collaboration, instant preview links, and easy integrations with GitHub, GitLab, and Bitbucket.",
+          "url": "https://vercel.com/"
+        },
+        {
+          "name": "Firebase",
+          "description": "A platform from Google offering hosting, real-time databases, authentication, and other backend services for web and mobile apps in one place.",
+          "url": "https://firebase.google.com/"
+        }
+      ],
+      "API and Automation": [
+        {
+          "name": "Zapier",
+          "description": "An automation tool that connects over 5,000 apps, allowing you to automate repetitive tasks without writing any code, combining services like email, Slack, Google Sheets, and more.",
+          "url": "https://zapier.com/"
+        },
+        {
+          "name": "Integromat (Make)",
+          "description": "A tool that connects apps and automates workflows in a visual way, similar to Zapier, but with more advanced features for complex workflows.",
+          "url": "https://www.make.com/en"
+        },
+        {
+          "name": "Postman",
+          "description": "A full-featured API development environment for building, testing, and managing APIs. It includes documentation generation, mock servers, and collaboration tools.",
+          "url": "https://www.postman.com/"
+        },
+        {
+          "name": "RapidAPI",
+          "description": "A marketplace for APIs, where you can discover, test, and connect to thousands of APIs in a single platform, offering various tools like API testing and integration.",
+          "url": "https://rapidapi.com/"
+        }
+      ],
+      "File Management & Productivity": [
+        {
+          "name": "Dropbox",
+          "description": "Cloud storage that offers file synchronization, sharing, and collaboration tools. It integrates with many apps and platforms to streamline document management.",
+          "url": "https://www.dropbox.com/"
+        },
+        {
+          "name": "Google Drive",
+          "description": "A cloud-based file storage service that includes Google Docs, Sheets, and Slides for productivity, as well as the ability to store and share files.",
+          "url": "https://drive.google.com/"
+        },
+        {
+          "name": "WeTransfer",
+          "description": "A simple platform for sending large files and collaborating, with tools for sharing files without requiring an account.",
+          "url": "https://wetransfer.com/"
+        },
+        {
+          "name": "Notion",
+          "description": "Combines notes, databases, tasks, and wikis in a single platform, making it an excellent all-in-one workspace for personal or team projects.",
+          "url": "https://www.notion.so/"
+        }
+      ],
+      "Miscellaneous All-in-One Tools": [
+        {
+          "name": "Ifttt",
+          "description": "Stands for \"If This Then That,\" an automation platform that connects various services, apps, and devices to automate workflows. It supports thousands of integrations across different industries.",
+          "url": "https://ifttt.com/"
+        },
+        {
+          "name": "Supermetrics",
+          "description": "An all-in-one tool for marketing and business reporting, helping you pull data from various marketing platforms like Google Ads, Facebook, and Instagram into one place for analysis.",
+          "url": "https://supermetrics.com/"
+        },
+        {
+          "name": "Buffer",
+          "description": "A social media management tool that allows users to schedule, publish, and analyze social media posts on platforms like Twitter, Facebook, and LinkedIn, all in one place.",
+          "url": "https://buffer.com/"
+        },
+        {
+          "name": "Canva",
+          "description": "A graphic design tool that lets you create everything from social media posts to presentations, with built-in templates and easy-to-use design features.",
+          "url": "https://www.canva.com/"
+        },
+        {
+          "name": "Loom",
+          "description": "A video messaging tool that allows you to record and share videos of your screen, making it great for tutorials, presentations, and asynchronous communication.",
+          "url": "https://www.loom.com/"
+        }
+      ]
+    }
+  }
+}
