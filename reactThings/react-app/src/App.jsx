@@ -1,4 +1,5 @@
 import Movies from "./Movies.jsx";
+import List from "./List.jsx"
 
 function App() {
   let data = [
@@ -28,20 +29,25 @@ function App() {
     },
   ];
 
+  let items = [{name: "Python", Ext: ".py"}, {name: "JavaScript", Ext: ".js"}, {name: "TypeScript", Ext: ".ts"}];
+
   return (
-    <div className="flexBox">
-      {data.map((movie) => (
-        <div key={movie.title}>
-          <Movies
-            title={movie.title}
-            year={movie.year}
-            genres={movie.genres}
-            summary={movie.summary}
-            poster={movie.poster}
-          />
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="flexBox">
+        {data.map((movie) => (
+          <div key={movie.title}>
+            <Movies
+              title={movie.title}
+              year={movie.year}
+              genres={movie.genres}
+              summary={movie.summary}
+              poster={movie.poster}
+            />
+          </div>
+        ))}
+      </div>
+      <List items={items} heading="Programing Languages"/>
+    </>
   );
 }
 
