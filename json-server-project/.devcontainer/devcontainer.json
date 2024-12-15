@@ -1,0 +1,17 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"features": {
+		"ghcr.io/devcontainers-extra/features/http-server:1": {},
+		"ghcr.io/devcontainers-extra/features/json-server:1": {}
+	},
+	"postCreateCommand": "npm install json-server",
+	"settings": {
+		"json-server": {
+			"port": 3000,
+			"watch": true,
+			"routes": {
+				"/api/movies": "/src/movies.json"
+			}
+		}
+	}
+}

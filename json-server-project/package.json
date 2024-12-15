@@ -1,0 +1,16 @@
+{
+  "name": "json-server-project",
+  "version": "1.0.0",
+  "description": "A project to set up a JSON server for serving movie data.",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch src/movies.json --port 3000"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}

@@ -1,39 +1,29 @@
-const fs = require("fs");
+// fetch("https://laughing-pancake-jgrv4x7rj4qhp6p5-3000.app.github.dev/movies")
+//   .then((res) => res.json())
+//   .then((data) => console.log(data));
 
-fs.readFile("output.json", "utf8", (err, data) => {
-  if (err) {
-    console.error("Error reading file:", err);
-    return;
-  }
+// let smallCaps = (char) =>
+//   char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
 
-  const jsonData = JSON.parse(data);
 
-  function convertData(data) {
-    const result = {};
 
-    Object.keys(data).forEach((category) => {
-      result[category] = {};
+// let alps = "abcdefghijklmnopqrstuvwxyz".split("");
 
-      Object.keys(data[category].subcategories).forEach((subcategory) => {
-        result[category][subcategory] =
-          data[category].subcategories[subcategory];
-      });
-    });
+// function num(n) {
+//   let index = 0;
 
-    return result;
-  }
+//   for (let i = 1; i <= n; i++) {
+//     let row = ""; 
+//     for (let j = 1; j <= i; j++) {
+//       row +=
+//         (index % 2 === 0
+//           ? alps[index].toUpperCase()
+//           : alps[index].toLowerCase()) + " ";
+//       index++;
+//     }
+//     console.log(row.trim());
+//   }
+// }
 
-  const convertedData = convertData(jsonData);
-
-  fs.writeFile(
-    "converted_output.json",
-    JSON.stringify(convertedData, null, 2),
-    (err) => {
-      if (err) {
-        console.error("Error writing file:", err);
-        return;
-      }
-      console.log("Converted data written to converted_output.json");
-    }
-  );
-});
+// num(4);
+// console.log(lmao(4))
