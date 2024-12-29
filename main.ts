@@ -54,3 +54,31 @@ enum myEnum {
 function myFunction4<T>(x: T): T {
   return x;
 }
+
+// utilise defined type
+type cardNum {
+      cardNumber: number;
+} 
+
+type cardDate {
+      cardDate: string;
+}
+
+type cardDetails = cardNum & cardDate & {cvv: number, name: string};
+
+let card: cardDetails = {
+      cardNumber: 123456789,
+      cardDate: '12/12',
+      cvv: 123,
+      name: 'John Doe'
+}
+
+// readonly property
+interface myInterface {
+  readonly _id: string;
+}
+
+// optional property
+interface myInterface {
+  name?: string;
+}
