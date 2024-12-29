@@ -1,0 +1,116 @@
+:root {
+  --background-color: #f0f0f0;
+  --border-color: #000;
+  --button-hover-color: #1ad9bd;
+  --delete-hover-color: #ff3300;
+  --container-bg-color: #fff;
+  --container-border-color: #ccc;
+  --input-border-color: #ddd;
+  --input-focus-border-color: #1ad9bd;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  background-color: var(--container-bg-color);
+  padding: 20px;
+  border: 2px solid var(--container-border-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+ul {
+  background-color: var(--background-color);
+  padding: 10px;
+  margin: 10px 0;
+  list-style: none;
+}
+
+ul > li {
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid var(--border-color);
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+ul > li > .Options {
+  display: flex;
+  gap: 7px;
+}
+
+ul > li > .Options > button {
+  background-color: var(--background-color);
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+ul > li > .Options > button:hover {
+  background-color: var(--button-hover-color);
+}
+
+ul > li > .Options > .Delete:hover {
+  background-color: var(--delete-hover-color) !important;
+}
+
+.Inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Inputs > label {
+  font-weight: 700;
+}
+
+.Inputs > .type {
+  display: flex;
+  gap: 10px;
+}
+
+.Inputs > .type > input {
+  border: 2px solid var(--input-border-color);
+  border-radius: 5px;
+  padding: 5px;
+  flex: 1;
+  transition: border-color 0.3s;
+}
+
+.Inputs > .type > input:focus {
+  border-color: var(--input-focus-border-color);
+  outline: none;
+}
+
+.Inputs > .type > button {
+  background-color: var(--background-color);
+  cursor: pointer;
+  padding: 5px 10px;
+  margin: 0;
+  border: 1px solid var(--border-color);
+  transition: background-color 0.3s;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.Inputs > .type > button:hover {
+  background-color: var(--button-hover-color);
+}

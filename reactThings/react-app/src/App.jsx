@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
+import ToDoList from "./ToDoList.jsx";
 import "./App.css";
 
 // function Counter() {
@@ -51,7 +52,7 @@ import "./App.css";
 export default function App() {
   return (
     <>
-      
+      <ToDoList />
     </>
   );
 }

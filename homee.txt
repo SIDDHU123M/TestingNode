@@ -1,0 +1,1 @@
+cd reactThings/react-app/ && npm run dev

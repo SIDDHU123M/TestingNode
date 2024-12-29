@@ -1,6 +1,6 @@
-// fetch("https://laughing-pancake-jgrv4x7rj4qhp6p5-3000.app.github.dev/movies")
-//   .then((res) => res.json())
-//   .then((data) => console.log(data));
+fetch("https://laughing-pancake-jgrv4x7rj4qhp6p5-3000.app.github.dev/movies")
+  .then((res) => res.json())
+  .then((data) => console.log(data));
 
 // let smallCaps = (char) =>
 //   char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase();
