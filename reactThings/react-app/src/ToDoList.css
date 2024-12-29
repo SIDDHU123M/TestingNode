@@ -10,17 +10,22 @@
 }
 
 body {
+  background-image: url('assets/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: var(--background-color);
   font-family: Arial, sans-serif;
 }
 
 .container {
-  background-color: var(--container-bg-color);
+  /* background-color: var(--container-bg-color); */
+  backdrop-filter: blur(10px);
   padding: 20px;
   border: 2px solid var(--container-border-color);
   border-radius: 10px;
@@ -30,7 +35,7 @@ body {
 }
 
 ul {
-  background-color: var(--background-color);
+  backdrop-filter: blur(10px);
   padding: 10px;
   margin: 10px 0;
   list-style: none;
@@ -40,7 +45,7 @@ ul > li {
   padding: 10px;
   margin: 10px 0;
   border: 2px solid var(--border-color);
-  background-color: var(--background-color);
+  backdrop-filter: blur(10px);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -54,7 +59,7 @@ ul > li > .Options {
 }
 
 ul > li > .Options > button {
-  background-color: var(--background-color);
+  /* background-color: hsla(0, 0%, 0%, 0); */
   cursor: pointer;
   padding: 5px 10px;
   margin: 0;

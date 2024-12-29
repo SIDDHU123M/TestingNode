@@ -12,7 +12,7 @@ export default function ToDoList() {
 
   function Add() {
     let Value = document.getElementById("task");
-    setTasks([...Tasks, Value.value]);
+    Value.value ? setTasks([...Tasks, Value.value]) : ''
     Value.value = "";
   }
 
