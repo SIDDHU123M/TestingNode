@@ -82,3 +82,11 @@ interface myInterface {
 interface myInterface {
   name?: string;
 }
+
+function myFunction(x: string | number): void {
+  if (typeof x === 'number') {
+     console.log(x.toLocaleString().toUpperCase());
+  }
+}
+
+myFunction(123);

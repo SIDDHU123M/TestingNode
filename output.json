@@ -1952,7 +1952,6 @@
         "url": "https://adaptable.io/"
       }
     ],
-    "Dynamic Programming": [],
     "Data Structures": [
       {
         "name": "This is CS50x",
@@ -1965,8 +1964,6 @@
         "url": "https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513"
       }
     ],
-    "Deep Learning": [],
-    "Networking": [],
     "Algorithms": [
       {
         "name": "Sorting Algorithms",
@@ -1974,7 +1971,6 @@
         "url": "https://www.youtube.com/playlist?list=PL2\\_aWCzGMAwKedT2KfDMB9YA5DgASZb3U"
       }
     ],
-    "Ethical Hacking": [],
     "Online Learning Platforms": [
       {
         "name": "Coursera",
@@ -3177,7 +3173,6 @@
     ]
   },
   "Awesome Tools": {
-    "Tools": [],
     "Code Snippet Tools": [
       {
         "name": "Ray.so",
