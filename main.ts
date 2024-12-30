@@ -90,3 +90,10 @@ function myFunction(x: string | number): void {
 }
 
 myFunction(123);
+
+// Array vs typule -- multiple types
+let arr: (string | number)[] = [1, 'Hello']; // no matter the order
+let myTuple: [string, number] = ['Hello', 1]; // order matters
+
+type typule = [string, number];
+let myTuple: typule = ['Hello', 1];
