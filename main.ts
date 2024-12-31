@@ -97,3 +97,65 @@ let myTuple: [string, number] = ['Hello', 1]; // order matters
 
 type typule = [string, number];
 let myTuple: typule = ['Hello', 1];
+
+// Union type
+type myType = string | number;
+let myVariable
+myVariable = 'Hello';
+myVariable = 1;
+
+// Intersection type
+type cardNum {
+      cardNumber: number;
+}
+
+type cardDate {
+      cardDate: string;
+}
+
+type cardDetails = cardNum & cardDate & {cvv: number, name: string};
+
+let card: cardDetails = {
+      cardNumber: 123456789,
+      cardDate: '12/12',
+      cvv: 123,
+      name: 'John Doe'
+}
+
+// Interface
+interface myInterface {
+  name: string;
+  age: number;
+}
+
+let myObject: myInterface = {
+  name: 'John Doe',
+  age: 30
+}
+
+// Class
+class myClass {
+  constructor(public name: string, public age: number) {}
+}
+
+let myObject: myClass = new myClass('John Doe', 30);
+
+// Enum
+enum myEnum {
+  A,
+  B,
+  C
+}
+
+let myVariable
+myVariable = myEnum.A;
+
+// optional property
+interface myInterface {
+  name?: string;
+}
+
+// readonly property
+interface myInterface {
+  readonly _id: string;
+}
